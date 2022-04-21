@@ -1,0 +1,51 @@
+h2{
+    font-size: calc(12px + 10 * (100vw / 1280));
+    padding: 0;
+    margin: 0 ;
+}
+.container{
+    width: 100%;
+    max-height: 250px;
+}
+.wrapperCard{
+    margin: 0.4em;
+    height: 100%;
+    border: 1px solid rgba(18, 34, 88, 0.12);
+    border-radius: 18px;
+    display: flex;
+}
+.text{
+    margin-bottom: 0;
+    padding: 2em 2em;
+    p{
+        font-size: calc(12px + 10 * (100vw / 3000));
+    }
+}
+.buttonWrapper{
+    bottom: 0 !important;
+    button{
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        border-radius: 8px;
+        border: none;
+        padding: 2em;
+        width: 40px;
+        height: 40px;
+        background-position: center !important;
+        background: rgba(62, 80, 114, 0.08) url(../../../../assets/images/right-arrow.svg) no-repeat ;
+    }
+}
+      
+.wrapperImage{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+    padding: 0.1em 0.2em;
+    height: 100%;
+    img{
+        width: 100%;
+        max-height: 230px;
+    }
+}

@@ -4,12 +4,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from "./components/header/header.component";
 import {FooterComponent} from "./components/footer/footer.component.";
+import { MainComponent } from './pages/main/main.component';
+import { BannerCardComponent } from './components/cards/banner-card/banner-card.component';
+import { SwiperCardComponent } from './components/cards/swiper-card/swiper-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent,
+    BannerCardComponent,
+    SwiperCardComponent
   ],
   imports: [
     BrowserModule,
