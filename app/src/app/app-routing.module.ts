@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HeaderComponent} from "./components/header/header.component";
 import {MainComponent} from "./pages/main/main.component";
+import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 
 const routes: Routes = [
   {

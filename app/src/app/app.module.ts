@@ -9,6 +9,7 @@ import { BannerCardComponent } from './components/cards/banner-card/banner-card.
 import { SwiperCardComponent } from './components/cards/swiper-card/swiper-card.component';
 import { SwiperBannerComponent } from './components/swiper-banner/swiper-banner.component';
 import { SwiperModule } from 'swiper/angular';
+import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import 'swiper/css/navigation'
 import 'swiper/css'
 @NgModule({
@@ -19,7 +20,8 @@ import 'swiper/css'
     MainComponent,
     BannerCardComponent,
     SwiperCardComponent,
-    SwiperBannerComponent
+    SwiperBannerComponent,
+    EcoMarketComponent
   ],
   imports: [
     BrowserModule,
