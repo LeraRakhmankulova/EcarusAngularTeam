@@ -11,7 +11,6 @@ import { SwiperBannerComponent } from './components/swiper-banner/swiper-banner.
 import { SwiperModule } from 'swiper/angular';
 import 'swiper/css/navigation'
 import 'swiper/css'
-
 @NgModule({
   declarations: [
     AppComponent,

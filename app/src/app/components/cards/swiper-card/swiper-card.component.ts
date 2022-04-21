@@ -10,7 +10,7 @@ export class SwiperCardComponent implements OnInit {
   @Input() title: string;
   @Input() text: string;
   @Input() btnText: string;
-  @Input() background: string ;
+  @Input() background: string;
   @Input() image: string;
 
   constructor() {

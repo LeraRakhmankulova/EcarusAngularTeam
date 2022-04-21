@@ -2,9 +2,13 @@
   <div class="container">
     <div class="header_content_wrapper">
       <div class="header_logo_wrapper">
+        <a
+          [routerLink]="['/products']">
+          <img src="../../../assets/images/logo.svg"/>
+        </a>
         <!--        <a routerLink="/role" class="nav-link" href="#">ROLES</a>-->
         <!--                <NavLink to='/'>-->
-        <img src="../../../assets/images/logo.svg"/>
+<!--        <img src="../../../assets/images/logo.svg"/>-->
         <!--                </NavLink>-->
       </div>
       <div class="menu_button">
@@ -16,25 +20,37 @@
       <nav class="navbar">
         <ul>
           <li>
+            <a
+              [routerLink]="['/']">
             Главная
+            </a>
             <!--            <NavLink className={({ isActive })=> `${styles.location_link}` + (isActive ? " activated" : null)}-->
             <!--              to='/'>Главная-->
             <!--            </NavLink>-->
           </li>
           <li>
+            <a
+              [routerLink]="['/collection_points']">
             Пункты сбора
+            </a>
             <!--            <NavLink className={({ isActive })=> `${styles.location_link}` + (isActive ? " activated" : null)}-->
             <!--              to='/points'>Пункты сбора-->
             <!--            </NavLink>-->
           </li>
           <li>
+            <a
+              [routerLink]="['/eco_market']">
             ЭкоМаркет
+            </a>
             <!--            <NavLink className={({ isActive })=> `${styles.location_link}` + (isActive ? " activated" : null)}-->
             <!--              to='/ecomarket'>ЭкоМаркет-->
             <!--            </NavLink>-->
           </li>
           <li>
+            <a
+              [routerLink]="['/about_service']">
             О сервисе
+            </a>
             <!--            <NavLink className={({ isActive })=> `${styles.location_link}` + (isActive ? " activated" : null)}-->
             <!--              to='/about'>О сервисе-->
             <!--            </NavLink>-->
