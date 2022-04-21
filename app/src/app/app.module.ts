@@ -7,6 +7,10 @@ import {FooterComponent} from "./components/footer/footer.component.";
 import { MainComponent } from './pages/main/main.component';
 import { BannerCardComponent } from './components/cards/banner-card/banner-card.component';
 import { SwiperCardComponent } from './components/cards/swiper-card/swiper-card.component';
+import { SwiperBannerComponent } from './components/swiper-banner/swiper-banner.component';
+import { SwiperModule } from 'swiper/angular';
+import 'swiper/css/navigation'
+import 'swiper/css'
 
 @NgModule({
   declarations: [
@@ -15,11 +19,13 @@ import { SwiperCardComponent } from './components/cards/swiper-card/swiper-card.
     FooterComponent,
     MainComponent,
     BannerCardComponent,
-    SwiperCardComponent
+    SwiperCardComponent,
+    SwiperBannerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
