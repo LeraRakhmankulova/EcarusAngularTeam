@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path:'eco_market',
-    component: HeaderComponent,
+    component: EcoMarketComponent,
     pathMatch:'full'
   },
   {
