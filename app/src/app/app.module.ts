@@ -13,6 +13,7 @@ import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import 'swiper/css/navigation'
 import 'swiper/css'
 import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.component";
+import {ModalButtonComponent} from "./ui/modal-button/button.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.compon
     SwiperCardComponent,
     SwiperBannerComponent,
     PromoCardComponent,
+    ModalButtonComponent,
     EcoMarketComponent
   ],
   imports: [
