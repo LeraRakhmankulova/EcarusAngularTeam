@@ -20,50 +20,33 @@
         </div>
 
       </div>
-      <div class="main_content">
-
-        <div class="search_block_wrapper">
-
-
-          <div class="search_block">
-            <div class="search_type">
-              <h4>Пол</h4>
-            </div>
-            <div class="search_type">
-              <h4>Тип товара</h4>
-            </div>
-            <div class="search_type">
-              <h4>Брэнд</h4>
-            </div>
-
-          </div>
-<!--      <div class="hidden_button">-->
-<!--        <button class="filters_button">-->
-<!--          Фильтры-->
+<!--      <div class={styles.hidden_button}>-->
+<!--        <button class={styles.filters_button} onClick={()-->
+<!--        => setOpen(!open)}>-->
+<!--        Фильтры-->
 <!--        </button>-->
 <!--      </div>-->
-    </div>
-  </div>
-<!--    </div></div>-->
+
 <!--      <CustomSheet open={open} setOpen={setOpen}/>-->
-<!--        <div class="main_content">-->
+        <div class="main_content">
 
-<!--          <div class="search_block_wrapper">-->
+          <div class="search_block_wrapper">
 
 
-<!--            <div class="search_block">-->
-<!--              <div class="search_type">-->
-<!--                <h4>Пол</h4>-->
+            <div class="search_block">
+              <div class="search_type">
+                <h4>Пол</h4>
 <!--                {genders.map((gender, id) => (-->
-<!--                <Checkbox isChecked={gender.checked}-->
+<!--                                        <Checkbox-->
+<!--                                            isChecked={gender.checked}-->
 <!--                onChange={() => updateData(id, setGenders, genders)}-->
 <!--                label={gender.title}-->
 <!--                id={id}-->
 <!--                />))-->
 <!--                }-->
-<!--              </div>-->
-<!--              <div class="search_type">-->
-<!--                <h4>Тип товара</h4>-->
+              </div>
+              <div class="search_type">
+                <h4>Тип товара</h4>
 <!--                {chooseAllTypes.map((allTp, id) => (-->
 <!--                                        <Checkbox id={id} label={allTp.title} isChecked={allTp.checked}-->
 <!--                onChange={() => {-->
@@ -79,9 +62,9 @@
 <!--                id={id}-->
 <!--                />))-->
 <!--                }-->
-<!--              </div>-->
-<!--              <div class="search_type">-->
-<!--                <h4>Брэнд</h4>-->
+              </div>
+              <div class="search_type">
+                <h4>Брэнд</h4>
 <!--                {chooseAllBrands.map((allBr, id) => (-->
 <!--                                        <Checkbox id={id} label={allBr.title} isChecked={allBr.checked}-->
 <!--                onChange={() => {-->
@@ -97,19 +80,19 @@
 <!--                label={brand.title}-->
 <!--                id={id}/>)-->
 <!--                }-->
-<!--              </div>-->
+              </div>
 
-<!--            </div>-->
+            </div>
 
 
 <!--            <ModalButton text={"Сбросить фильтры"} color={"black"}-->
 <!--            background={"rgba(62, 80, 114, 0.08)"}-->
 <!--            width={'100%'} disabled='' onClick={() => resetFilters()} type=''/>-->
-<!--          </div>-->
-<!--          <div class="cards_block">-->
-<!--            <div class="card_product">-->
-<!--              <PromoCard price='200'/>-->
-<!--            </div>-->
+          </div>
+          <div class="cards_block">
+            <div class="card_product">
+              <app-promo-card price='200'></app-promo-card>
+            </div>
 <!--            {isShow ?-->
 <!--                                DataItems.map(item =>-->
 <!--                                    <div className={styles.card_product}>-->
@@ -124,11 +107,11 @@
 <!--                                        <ProductCardPlug/>-->
 <!--                                    </div>)}-->
 
-<!--          </div>-->
+          </div>
 
-<!--        </div>-->
+        </div>
 
-<!--    </div>-->
+    </div>
 
-<!--  </div>-->
+  </div>
 <!--</Trail>-->

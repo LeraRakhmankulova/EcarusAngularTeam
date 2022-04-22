@@ -12,6 +12,7 @@ import { SwiperModule } from 'swiper/angular';
 import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import 'swiper/css/navigation'
 import 'swiper/css'
+import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import 'swiper/css'
     BannerCardComponent,
     SwiperCardComponent,
     SwiperBannerComponent,
+    PromoCardComponent,
     EcoMarketComponent
   ],
   imports: [
