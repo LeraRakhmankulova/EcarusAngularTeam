@@ -90,46 +90,13 @@
         <div class="card_product">
           <app-promo-card price='200'></app-promo-card>
         </div>
-        <div class="card_product">
-          <app-product-card price='1000'
-                            brand='Nike'
-                            name='Nike Air Max 2021'
-                            category='Мужская обувь'
-                            picture='../../../assets/images/nike1.png'></app-product-card>
-          </div>
-          <div class="card_product">
-          <app-product-card price='750'
-                            brand='Nike'
-                            name='Nike Air Max 90 Premium'
-                            category='Мужская обувь'
-                            picture='../../../assets/images/nike2.png'></app-product-card>
-            </div>
-        <div class="card_product">
-          <app-product-card price='1200'
-                            brand='Adidas'
-                            name='Adidas Alphabounce RC'
-                            category='Мужская обувь'
-                            picture='../../../assets/images/nike3.png'></app-product-card>
-          </div>
-        <div class="card_product">
-          <app-product-card price='1000'
-                            brand='H&M'
-                            name='Nike Air Max 2021'
-                            category='Мужская обувь'
-                            picture='../../../assets/images/nike4.png'></app-product-card>
-          </div>
-        <div class="card_product">
-          <app-product-card price='2100'
-                            brand='Nike'
-                            name='Nike Air Force 1 Low'
-                            category='Мужская обувь'
-                            picture='../../../assets/images/nike5.png'></app-product-card>
+        <div *ngFor="let i of data" class="card_product">
+            <app-product-card price="{{i.price}}"
+                              brand="{{i.brand}}"
+                              name="{{i.nameDesc}}"
+                              category="{{i.category}}"
+                              picture="{{i.picture}}"></app-product-card>
         </div>
-
-        <!--                                            <div className={styles.card_product}>-->
-        <!--                                                <ProductCardPlug/>-->
-        <!--
-                                              ></div>)}-->
       </div>
 
     </div>
