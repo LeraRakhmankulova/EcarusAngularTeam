@@ -15,6 +15,7 @@ import 'swiper/css'
 import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.component";
 import {ModalButtonComponent} from "./ui/modal-button/button.component";
 import {CheckboxComponent} from "./ui/checkbox/checkbox.component";
+import {ProductCardComponent} from "./components/cards/product-card/product-card.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import {CheckboxComponent} from "./ui/checkbox/checkbox.component";
     SwiperCardComponent,
     SwiperBannerComponent,
     PromoCardComponent,
+    ProductCardComponent,
     ModalButtonComponent,
     CheckboxComponent,
     EcoMarketComponent
