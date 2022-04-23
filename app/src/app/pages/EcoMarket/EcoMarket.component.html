@@ -35,48 +35,30 @@
         <div class="search_block">
           <div class="search_type">
             <h4>Пол</h4>
-            <app-checkbox
-              label='Мужской'
-              id='Мужской'></app-checkbox>
-            <app-checkbox
-              label='Женский'
-              id='Женский'></app-checkbox>
+            <div *ngFor="let i of gender">
+              <app-checkbox label="{{i.title}}"
+                            id="{{i.title}}"></app-checkbox>
+            </div>
           </div>
           <div class="search_type">
             <h4>Тип товара</h4>
             <app-checkbox
-              label='Выбрать все'
-              id='Выбрать все'></app-checkbox>
-            <app-checkbox
-              label='Одежда'
-              id='Одежда'></app-checkbox>
-            <app-checkbox
-              label='Обувь'
-              id='Обувь'></app-checkbox>
-            <app-checkbox
-              label='Аксессуары'
-              id='Аксессуары'></app-checkbox>
+              label="{{allTp[0].title}}"
+              id="{{allTp[0].title}}"></app-checkbox>
+            <div *ngFor="let k of type" class="card_product">
+              <app-checkbox label="{{k.title}}"
+                            id="{{k.title}}"></app-checkbox>
+            </div>
           </div>
           <div class="search_type">
             <h4>Брэнд</h4>
             <app-checkbox
-              label='Выбрать все'
-              id='Выбрать все 2'></app-checkbox>
-            <app-checkbox
-              label='H&M'
-              id='H&M'></app-checkbox>
-            <app-checkbox
-              label='P&B'
-              id='P&B'></app-checkbox>
-            <app-checkbox
-              label='Adidas'
-              id='Adidas'></app-checkbox>
-            <app-checkbox
-              label='Nike'
-              id='Nike'></app-checkbox>
-            <app-checkbox
-              label='Reebok'
-              id='Reebok'></app-checkbox>
+              label="{{allBr[0].title}}"
+              id="{{allBr[0].title}}"></app-checkbox>
+            <div *ngFor="let j of brand" class="card_product">
+              <app-checkbox label="{{j.title}}"
+                            id="{{j.title}}"></app-checkbox>
+            </div>
           </div>
 
         </div>
@@ -90,12 +72,12 @@
         <div class="card_product">
           <app-promo-card price='200'></app-promo-card>
         </div>
-        <div *ngFor="let i of data" class="card_product">
-            <app-product-card price="{{i.price}}"
-                              brand="{{i.brand}}"
-                              name="{{i.nameDesc}}"
-                              category="{{i.category}}"
-                              picture="{{i.picture}}"></app-product-card>
+        <div *ngFor="let i of data_cards" class="card_product">
+          <app-product-card price="{{i.price}}"
+                            brand="{{i.brand}}"
+                            name="{{i.nameDesc}}"
+                            category="{{i.category}}"
+                            picture="{{i.picture}}"></app-product-card>
         </div>
       </div>
 
