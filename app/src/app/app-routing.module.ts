@@ -4,6 +4,7 @@ import {HeaderComponent} from "./components/header/header.component";
 import {MainComponent} from "./pages/main/main.component";
 import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import {MapComponent} from "./components/map/Map.component";
+import {FooterComponent} from "./components/footer/footer.component.";
 
 const routes: Routes = [
   {
@@ -23,7 +24,7 @@ const routes: Routes = [
   },
   {
     path:'about_service',
-    component: HeaderComponent,
+    component: FooterComponent,
     pathMatch:'full'
   }
 
