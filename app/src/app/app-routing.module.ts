@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {HeaderComponent} from "./components/header/header.component";
 import {MainComponent} from "./pages/main/main.component";
 import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
+import {MapComponent} from "./components/map/Map.component";
 
 const routes: Routes = [
   {
@@ -12,7 +13,7 @@ const routes: Routes = [
   },
   {
     path:'collection_points',
-    component: HeaderComponent,
+    component: MapComponent,
     pathMatch:'full'
   },
   {

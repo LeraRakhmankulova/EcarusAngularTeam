@@ -45,8 +45,6 @@ export class EcoMarketComponent implements OnInit {
     ]
 
   }
-
   ngOnInit(): void {
   }
-
 }

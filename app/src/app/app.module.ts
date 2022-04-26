@@ -16,6 +16,8 @@ import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.compon
 import {ModalButtonComponent} from "./ui/modal-button/button.component";
 import {CheckboxComponent} from "./ui/checkbox/checkbox.component";
 import {ProductCardComponent} from "./components/cards/product-card/product-card.component";
+import {MapComponent} from "./components/map/Map.component";
+import {LeafletModule} from "@asymmetrik/ngx-leaflet";
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +31,14 @@ import {ProductCardComponent} from "./components/cards/product-card/product-card
     ProductCardComponent,
     ModalButtonComponent,
     CheckboxComponent,
-    EcoMarketComponent
+    EcoMarketComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
