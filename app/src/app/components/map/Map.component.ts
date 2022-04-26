@@ -40,7 +40,7 @@ export class MapComponent implements AfterViewInit {
     this.map = L.map('map').setView([55.7887, 49.1221], 12);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 12,
+      maxZoom: 13,
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
@@ -52,8 +52,8 @@ export class MapComponent implements AfterViewInit {
         this.map.flyTo([position.latitude, position.longitude], 13);
 
         const icon = L.icon({
-          iconUrl: 'assets/images/marker-icon.png',
-          shadowUrl: 'assets/images/marker-shadow.png',
+          iconUrl: '../../../assets/images/marker-icon.png',
+          shadowUrl: '../../../assets/images/marker-shadow.png',
           popupAnchor: [13, 0],
         });
 

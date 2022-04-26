@@ -4,7 +4,6 @@
       display: none !important
     .hidden_menu
       display: none
-
 @mixin desktop
   @media screen and (max-width: 1280px)
     .menu_button
@@ -16,7 +15,6 @@
       padding: 0.6em 2.5em
       padding-bottom: 0.1em
       font-size: 10px
-
       .in
         button
           font-size: 10px
@@ -33,7 +31,6 @@
     .main_nav
       .location
         display: none
-
       .in
         display: none
 
@@ -72,17 +69,14 @@
   grid-template-rows: 1fr
   grid-template-columns: 1fr 8fr 3fr
   grid-template-areas: "logo lside rside"
-
   .header_logo_wrapper
     grid-area: logo
     padding: 1em
     cursor: pointer
-
   ul
     li
       display: inline
       padding: 2em 1em
-
       a
         color: rgba(0, 11, 38, 0.64)
         text-decoration: none
@@ -90,11 +84,9 @@
         font-weight: 500
         white-space: nowrap
         @include active_text
-
         &:hover
           padding-bottom: 1.7em
           border-bottom: 3px solid #07C88E
-
         &:active
           padding-bottom: 1.7em
           border-bottom: 3px solid #07C88E
@@ -102,12 +94,10 @@
 
 .navbar
   display: flex
-
 .side_part
   ul
     @include indents
     display: flex
-
     li
       color: rgba(0, 11, 38, 0.8)
       margin: 0 1em
@@ -121,14 +111,11 @@
   font-size: 14px
   grid-area: rside
   display: flex
-
   li
     display: flex
     padding-right: 1em
-
     .icon
       margin: 1em 0.5em
-
   .navbar_indent_block
     padding: 0 1.5em
 
@@ -143,19 +130,15 @@
     font-weight: normal
     background-repeat: no-repeat
     background-image: url("../../../assets/images/signIn.svg")
-
     &:hover
       opacity: 1
       font-weight: 500
-
 .location
   opacity: 0.88
-
   &:hover
     opacity: 1
     color: #000B26
     font-weight: 500
-
   p
     padding: 0 0.5em
 
@@ -167,7 +150,6 @@
 
 .menu_button
   width: 100%
-
   button
     cursor: pointer
     border: none
@@ -176,7 +158,6 @@
 
 .side_part
   margin: 0
-
   .hidden_menu li
     padding: 1em 0
     text-align: left
