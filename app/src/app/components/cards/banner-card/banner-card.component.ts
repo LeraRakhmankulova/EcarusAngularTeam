@@ -10,11 +10,13 @@ export class BannerCardComponent {
   @Input() title: string;
   @Input() text: string ;
   @Input() image: string;
+  @Input() link: string;
   
   constructor() {
     this.title ="";
 		this.text ="";
     this.image ="";
+    this.link ="";
    }
 
   getTitle(){
