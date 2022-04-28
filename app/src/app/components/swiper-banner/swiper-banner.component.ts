@@ -1,23 +1,22 @@
-import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
-import { Navigation, SwiperOptions } from 'swiper';
-import SwiperCore from 'swiper';
-SwiperCore.use([Navigation]);
+import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import SwiperCore, { SwiperOptions, Navigation, Autoplay } from 'swiper';
+
+SwiperCore.use([Navigation, Autoplay]);
 
 @Component({
   selector: 'app-swiper',
   templateUrl: './swiper-banner.component.html',
-  styleUrls: ['./swiper-banner.component.scss']
+  styleUrls: ['./swiper-banner.component.scss'],
+	// changeDetection: ChangeDetectionStrategy.OnPush,
+	encapsulation: ViewEncapsulation.None
 })
-export class SwiperBannerComponent implements OnInit {
 
+export class SwiperBannerComponent {
   config: SwiperOptions = {
 		slidesPerView: 1,
 		spaceBetween: 50,
 		navigation: true,
-	};
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+		loop: true,
+		autoplay: true,
+	}
 }

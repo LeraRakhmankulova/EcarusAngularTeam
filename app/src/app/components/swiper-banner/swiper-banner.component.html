@@ -1,7 +1,14 @@
-<div>
-    <swiper
-		[config]='config'
-	>
+<div class='sliderWrapper'>
+    <div class='navigation'>
+        <div class='swiper-button-prev-custom'>
+            <img src='../../../assets/images/prev.svg' alt=''>
+        </div>
+
+        <div class='swiper-button-next-custom'>
+            <img src='../../../assets/images/next.svg' alt=''>
+        </div>
+    </div>
+    <swiper [config]='config'>
         <ng-template swiperSlide>
             <app-swiperCard title='Сделаем мир чище'
                 text='Сдай макулатуру или старую одежду и получи скидку на покупку товаров из переработанных материалов'

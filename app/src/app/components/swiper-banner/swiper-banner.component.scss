@@ -1,2 +1,39 @@
-@import '~swiper/swiper.min.css';
-@import '~swiper/modules/navigation/navigation.min.css';
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.navigation {
+    top: 190px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    width: 50px;
+    height: 50px;
+    background: white no-repeat center;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 24px rgba(0, 11, 38, 0.12);
+}
+
+.swiper-button-prev-custom {
+    margin-left: -18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-button-next-custom {
+    margin-right: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
