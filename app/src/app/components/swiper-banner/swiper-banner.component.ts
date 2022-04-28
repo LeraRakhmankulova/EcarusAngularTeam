@@ -7,7 +7,7 @@ SwiperCore.use([Navigation, Autoplay]);
   selector: 'app-swiper',
   templateUrl: './swiper-banner.component.html',
   styleUrls: ['./swiper-banner.component.scss'],
-	// changeDetection: ChangeDetectionStrategy.OnPush,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	encapsulation: ViewEncapsulation.None
 })
 
@@ -16,7 +16,7 @@ export class SwiperBannerComponent {
 		slidesPerView: 1,
 		spaceBetween: 50,
 		navigation: true,
-		loop: true,
-		autoplay: true,
+		// loop: true,
+		// autoplay: true,
 	}
 }
