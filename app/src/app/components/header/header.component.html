@@ -15,22 +15,27 @@
       <nav class="navbar">
         <ul>
           <li>
-            <a [routerLink]="['/']">
+            <a [routerLink]="['/']"
+            [routerLinkActiveOptions]='{exact:true}'
+              routerLinkActive='location_link'>
               Главная
             </a>
           </li>
           <li>
-            <a [routerLink]="['/collection_points']">
+            <a [routerLink]="['/collection_points']"
+              routerLinkActive='location_link'>
               Пункты сбора
             </a>
           </li>
           <li>
-            <a [routerLink]="['/eco_market']">
+            <a [routerLink]="['/eco_market']"
+            routerLinkActive='location_link'>
               ЭкоМаркет
             </a>
           </li>
           <li>
-            <a [routerLink]="['/about_service']">
+            <a [routerLink]="['/about_service']"
+            routerLinkActive='location_link'>
               О сервисе
             </a>
           </li>
