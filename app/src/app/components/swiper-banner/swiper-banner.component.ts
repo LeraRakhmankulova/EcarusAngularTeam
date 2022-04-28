@@ -16,7 +16,7 @@ export class SwiperBannerComponent {
 		slidesPerView: 1,
 		spaceBetween: 50,
 		navigation: true,
-		// loop: true,
-		// autoplay: true,
+		loop: true,
+		autoplay: true,
 	}
 }
