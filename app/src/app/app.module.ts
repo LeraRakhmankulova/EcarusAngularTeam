@@ -11,8 +11,8 @@ import { SwiperBannerComponent } from './components/swiper-banner/swiper-banner.
 import { SwiperModule } from 'swiper/angular';
 import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.component";
-import {ModalButtonComponent} from "./ui/modal-button/button.component";
-import {CheckboxComponent} from "./ui/checkbox/checkbox.component";
+import {ModalButtonComponent} from "./components/ui/modal-button/button.component";
+import {CheckboxComponent} from "./components/ui/checkbox/checkbox.component";
 import {ProductCardComponent} from "./components/cards/product-card/product-card.component";
 import {MapComponent} from "./components/map/Map.component";
 import {LeafletModule} from "@asymmetrik/ngx-leaflet";

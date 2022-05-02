@@ -1,6 +1,6 @@
 import './scroll_custom.css'
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {DataItems} from '../../stores/productStore'
+import {DataItems} from '../../mocks/productMock'
 
 @Component({
   selector: 'app-eco-market',

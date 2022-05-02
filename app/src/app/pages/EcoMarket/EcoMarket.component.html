@@ -1,7 +1,5 @@
-<!--<Trail>-->
 <div class="container">
   <div class="page_wrapper">
-
     <div class="upper_block_container">
       <h1>ЭкоМаркет</h1>
       <div class="links">
@@ -17,7 +15,6 @@
           </li>
         </ul>
       </div>
-
     </div>
     <!--      <div class={styles.hidden_button}>-->
     <!--        <button class={styles.filters_button} onClick={()-->
@@ -33,55 +30,37 @@
           <div class="search_type">
             <h4>Пол</h4>
             <div *ngFor="let i of gender">
-              <app-checkbox label="{{i.title}}"
-                            id="{{i.title}}"></app-checkbox>
+              <app-checkbox label="{{i.title}}" id="{{i.title}}"></app-checkbox>
             </div>
           </div>
           <div class="search_type">
             <h4>Тип товара</h4>
-            <app-checkbox
-              label="{{allTp[0].title}}"
-              id="{{allTp[0].title}}"></app-checkbox>
+            <app-checkbox label="{{allTp[0].title}}" id="{{allTp[0].title}}"></app-checkbox>
             <div *ngFor="let k of type" class="card_product">
-              <app-checkbox label="{{k.title}}"
-                            id="{{k.title}}"></app-checkbox>
+              <app-checkbox label="{{k.title}}" id="{{k.title}}"></app-checkbox>
             </div>
           </div>
           <div class="search_type">
             <h4>Брэнд</h4>
-            <app-checkbox
-              label="{{allBr[0].title}}"
-              id="{{allBr[0].title}}"></app-checkbox>
+            <app-checkbox label="{{allBr[0].title}}" id="{{allBr[0].title}}"></app-checkbox>
             <div *ngFor="let j of brand" class="card_product">
-              <app-checkbox label="{{j.title}}"
-                            id="{{j.title}}"></app-checkbox>
+              <app-checkbox label="{{j.title}}" id="{{j.title}}"></app-checkbox>
             </div>
           </div>
-
         </div>
-
-
-        <app-modal-button text="Сбросить фильтры" color="black"
-                          background="rgba(62, 80, 114, 0.08)"
-                          width='100%'></app-modal-button>
+        <app-modal-button text="Сбросить фильтры" color="black" background="rgba(62, 80, 114, 0.08)" width='100%'>
+        </app-modal-button>
       </div>
       <div class="cards_block">
         <div class="card_product">
           <app-promo-card price='200'></app-promo-card>
         </div>
         <div *ngFor="let i of data_cards" class="card_product">
-          <app-product-card price="{{i.price}}"
-                            brand="{{i.brand}}"
-                            name="{{i.nameDesc}}"
-                            category="{{i.category}}"
-                            picture="{{i.picture}}"></app-product-card>
+          <app-product-card price="{{i.price}}" brand="{{i.brand}}" name="{{i.nameDesc}}" category="{{i.category}}"
+            picture="{{i.picture}}"></app-product-card>
         </div>
       </div>
-
     </div>
-
   </div>
-
 </div>
-<!--</Trail>-->
 <app-footer></app-footer>
