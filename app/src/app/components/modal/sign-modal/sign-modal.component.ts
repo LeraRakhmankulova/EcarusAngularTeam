@@ -8,7 +8,7 @@ interface DialogData {
 @Component({
   selector: 'app-sign-modal',
   templateUrl: 'sign-modal.component.html',
-  styleUrls: ['sign-modal.component.scss'],
+  styleUrls: ['sign-modal.component.sass'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SignModalComponent implements OnInit {

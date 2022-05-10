@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {DialogService} from "../../services/dialog.service";
 import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
 
@@ -6,11 +6,13 @@ import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class HeaderComponent{
+export class HeaderComponent implements OnInit{
   constructor(private dialog: DialogService) {
+  }
+  ngOnInit(): void {
   }
 
   openSimpleDialog() {
