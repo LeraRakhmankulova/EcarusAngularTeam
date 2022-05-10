@@ -1,5 +1,6 @@
-
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {DialogService} from "../../services/dialog.service";
+import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
 
 @Component({
   selector: 'app-header',
@@ -8,10 +9,24 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
-export class HeaderComponent implements OnInit {
-  constructor() { }
+export class HeaderComponent{
+  constructor(private dialog: DialogService) {
+  }
 
-  ngOnInit(): void {
+  openSimpleDialog() {
+    this.dialog.openDialog(SignModalComponent);
+  }
+
+  openActionDialog() {
+    const dialog = this.dialog.openDialog(SignModalComponent, {
+      data: {
+        name: 'Иван Иванович'
+      },
+    });
+
+    dialog.afterClosed().subscribe(dialogResult => {
+      console.log(dialogResult);
+    });
   }
 
 }

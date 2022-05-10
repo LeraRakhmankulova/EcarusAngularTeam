@@ -9,6 +9,7 @@ import { BannerCardComponent } from './components/cards/banner-card/banner-card.
 import { SwiperCardComponent } from './components/cards/swiper-card/swiper-card.component';
 import { SwiperBannerComponent } from './components/swiper-banner/swiper-banner.component';
 import { SwiperModule } from 'swiper/angular';
+import { DialogModule } from '@angular/cdk-experimental/dialog';
 import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import {PromoCardComponent} from "./components/cards/promo-card/PromoCard.component";
 import {ModalButtonComponent} from "./components/ui/modal-button/button.component";
@@ -17,6 +18,11 @@ import {ProductCardComponent} from "./components/cards/product-card/product-card
 import {MapComponent} from "./components/map/Map.component";
 import {LeafletModule} from "@asymmetrik/ngx-leaflet";
 import {MapPageComponent} from "./pages/MapPage/MapPage.component";
+import {ModalContainerComponent} from "./components/modal/modal-container/modal-container.component";
+import {SignModalComponent} from "./components/modal/sign-modal/sign-modal.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {OverlayModule} from "@angular/cdk/overlay";
+import {PortalModule} from "@angular/cdk/portal";
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,13 +38,19 @@ import {MapPageComponent} from "./pages/MapPage/MapPage.component";
     CheckboxComponent,
     EcoMarketComponent,
     MapComponent,
-    MapPageComponent
+    MapPageComponent,
+    ModalContainerComponent,
+    SignModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     [SwiperModule],
-    LeafletModule
+    LeafletModule,
+    DialogModule,
+    BrowserAnimationsModule,
+    OverlayModule,
+    PortalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
