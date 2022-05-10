@@ -1,4 +1,41 @@
-Уважаемый {{ data?.name || 'пользователь' }}, вы действительно хотите закрыть страницу?
-
 <button (click)='close(true)'>Да</button>
 <button (click)='close(false)'>нет</button>
+<!--<form onSubmit={handleSubmit}>-->
+<div class="wrapper_title">
+  <div class="modal_title">
+    <h3>Вход</h3>
+  </div>
+  <div class="wrapper_exit_button">
+    <button (click)="close(true)">
+      <!--        <Icon name='out' width='32' height='32' />-->
+    </button>
+  </div>
+</div>
+<div class="content_wrapper">
+  <div class="input_wrapper">
+    <input placeholder='Телефон' type='text'
+           name='phone'/>
+    <!--      {touched.phone && errors.phone && <p>{errors.phone}</p>}-->
+    <input placeholder='Пароль' type='password'
+           name='password'/>
+    <!--      {touched.password && errors.password &&-->
+    <!--                                    <p>{errors.password}</p>}-->
+  </div>
+  <div class="button_wrapper">
+    <div class="button_wrapper_content">
+      <button type='submit'>Войти</button>
+    </div>
+    <div class="link_text_wrapper">
+      <div>
+        <a>Войти с помощью смс</a>
+      </div>
+      <div>
+        <a>Регистрация</a>
+      </div>
+    </div>
+    <div class="button_wrapper_content">
+      <button>Вход для партнёров</button>
+    </div>
+  </div>
+</div>
+<!--</form>-->
