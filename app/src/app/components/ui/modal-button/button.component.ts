@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-modal-button',
@@ -10,12 +10,14 @@ export class ModalButtonComponent implements OnInit {
   @Input() color: string;
   @Input() background: string;
   @Input() width: string;
+  @Input() func: any;
 
   constructor() {
     this.text = "";
     this.color = "";
     this.background = "";
-    this.width ="";
+    this.width = "";
+    this.func = "";
   }
 
   ngOnInit(): void {

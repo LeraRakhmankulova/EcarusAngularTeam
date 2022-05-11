@@ -9,7 +9,7 @@ export class InputComponent implements OnInit {
   @Input() placeholder: string;
   @Input() type: string;
   @Input() name: string;
-  // @Input() onChange: string;
+  @Input() formName: string;
   // @Input() onBlur: string;
   // @Input() value: string;
 
@@ -17,6 +17,7 @@ export class InputComponent implements OnInit {
     this.placeholder = "";
     this.type = "";
     this.name = "";
+    this.formName="";
     // this.onChange="";
     // this.onBlur="";
     // this.value='';

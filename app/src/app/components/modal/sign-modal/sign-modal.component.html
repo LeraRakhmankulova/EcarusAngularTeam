@@ -1,42 +1,39 @@
-<!--<form onSubmit={handleSubmit}>-->
-<div class="wrapper_title">
-  <div class="modal_title">
-    <h3>Вход</h3>
-  </div>
-  <div class="wrapper_exit_button">
-    <button (click)="close(true)">
-    <img src="../../../../assets/images/out.svg" alt=""/>
-    </button>
-  </div>
-</div>
-<div class="content_wrapper">
-  <div class="input_wrapper">
-    <app-modal-input placeholder="Телефон" type='text'
-           name='phone' ></app-modal-input>
-    <!--      {touched.phone && errors.phone && <p>{errors.phone}</p>}-->
-    <app-modal-input placeholder='Пароль' type='password'
-                     name='password' ></app-modal-input>
-    <!--      {touched.password && errors.password &&-->
-    <!--                                    <p>{errors.password}</p>}-->
-  </div>
-  <div class="button_wrapper">
-    <div class="button_wrapper_content">
-      <app-modal-button text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
+<form [formGroup]='Form'>
+  <div class="wrapper_title">
+    <div class="modal_title">
+      <h3>Вход</h3>
     </div>
-    <div class="link_text_wrapper">
-      <div>
-        <a (click)="close(true);openActionDialog()">Войти с помощью смс</a>
+    <div class="wrapper_exit_button">
+      <button (click)="close(true)">
+        <img src="../../../../assets/images/out.svg" alt=""/>
+      </button>
+    </div>
+  </div>
+  <div class="content_wrapper">
+    <div class="input_wrapper">
+      <input placeholder="Телефон" type='text' name='login' formControlName='login'/>
       </div>
-      <div>
-        <a (click)="close(true);openActionDialog()">Регистрация</a>
-      </div>
-    </div>
-    <div class="button_wrapper_content">
-      <app-modal-button text='Вход для партнёров' color='black'
-                        background='rgba(62, 80, 114, 0.08)' width='100%'
-                        disabled=''></app-modal-button>
-    </div>
-  </div>
-</div>
 
-<!--</form>-->
+    <div class="input_wrapper">
+      <input placeholder='Пароль' type='password' name='password' formControlName='password'/>
+    </div>
+    <div class="button_wrapper">
+      <div class="button_wrapper_content">
+        <app-modal-button (click)="login()" text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
+      </div>
+      <div class="link_text_wrapper">
+        <div>
+          <a (click)="close(true);openActionDialog()">Войти с помощью смс</a>
+        </div>
+        <div>
+          <a (click)="close(true);openActionDialog()">Регистрация</a>
+        </div>
+      </div>
+      <div class="button_wrapper_content">
+        <app-modal-button text='Вход для партнёров' color='black'
+                          background='rgba(62, 80, 114, 0.08)' width='100%'
+                          disabled=''></app-modal-button>
+      </div>
+    </div>
+  </div>
+</form>
