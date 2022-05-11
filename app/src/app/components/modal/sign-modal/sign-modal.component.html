@@ -1,5 +1,3 @@
-<button (click)='close(true)'>Да</button>
-<button (click)='close(false)'>нет</button>
 <!--<form onSubmit={handleSubmit}>-->
 <div class="wrapper_title">
   <div class="modal_title">
@@ -7,7 +5,7 @@
   </div>
   <div class="wrapper_exit_button">
     <button (click)="close(true)">
-      <!--        <Icon name='out' width='32' height='32' />-->
+    <img src="../../../../assets/images/out.svg" alt=""/>
     </button>
   </div>
 </div>
@@ -23,7 +21,7 @@
   </div>
   <div class="button_wrapper">
     <div class="button_wrapper_content">
-      <button type='submit'>Войти</button>
+      <app-modal-button text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
     </div>
     <div class="link_text_wrapper">
       <div>
@@ -34,8 +32,11 @@
       </div>
     </div>
     <div class="button_wrapper_content">
-      <button>Вход для партнёров</button>
+      <app-modal-button text='Вход для партнёров' color='black'
+                        background='rgba(62, 80, 114, 0.08)' width='100%'
+                        disabled=''></app-modal-button>
     </div>
   </div>
 </div>
+
 <!--</form>-->
