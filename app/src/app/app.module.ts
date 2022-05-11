@@ -23,6 +23,7 @@ import {SignModalComponent} from "./components/modal/sign-modal/sign-modal.compo
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {OverlayModule} from "@angular/cdk/overlay";
 import {PortalModule} from "@angular/cdk/portal";
+import {InputComponent} from "./components/ui/input/input.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import {PortalModule} from "@angular/cdk/portal";
     MapComponent,
     MapPageComponent,
     ModalContainerComponent,
-    SignModalComponent
+    SignModalComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
