@@ -1,5 +1,7 @@
 import {ChangeDetectionStrategy, Component, Inject, OnInit, Optional} from '@angular/core';
 import {DIALOG_DATA, DialogRef} from '@angular/cdk-experimental/dialog';
+import {DialogService} from "../../../services/dialog.service";
+import {RegisterModalComponent} from "../register-modal/register-modal.component";
 
 interface DialogData {
   name: string;
@@ -15,6 +17,7 @@ export class SignModalComponent implements OnInit {
 
   constructor(
     private dialogRef: DialogRef<SignModalComponent>,
+    private dialog: DialogService,
     @Optional() @Inject(DIALOG_DATA) public data: DialogData,
   ) {
   }
@@ -26,6 +29,17 @@ export class SignModalComponent implements OnInit {
 
   close(resolve: boolean): void {
     this.dialogRef.close(resolve);
+  }
+  openActionDialog() {
+    const dialog = this.dialog.openDialog(RegisterModalComponent, {
+      data: {
+        name: 'Иван Иванович'
+      },
+    });
+
+    dialog.afterClosed().subscribe(dialogResult => {
+      console.log(dialogResult);
+    });
   }
 
 }

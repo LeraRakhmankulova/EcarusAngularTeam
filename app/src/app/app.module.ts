@@ -24,6 +24,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {OverlayModule} from "@angular/cdk/overlay";
 import {PortalModule} from "@angular/cdk/portal";
 import {InputComponent} from "./components/ui/input/input.component";
+import {RegisterModalComponent} from "./components/modal/register-modal/register-modal.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import {InputComponent} from "./components/ui/input/input.component";
     MapComponent,
     MapPageComponent,
     ModalContainerComponent,
+    RegisterModalComponent,
     SignModalComponent,
     InputComponent
   ],
