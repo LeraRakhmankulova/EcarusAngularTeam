@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'userPromo-card',
   templateUrl: './userPromo-card.component.html',
   styleUrls: ['./userPromo-card.component.scss']
 })
-export class UserpromoCardComponent implements OnInit {
+export class UserpromoCardComponent {
 
-  constructor() { }
+  @Input() image: string;
+  @Input() button: string;
 
-  ngOnInit(): void {
-  }
+  constructor() {
+    this.image ="";
+    this.button ="";
+   }
 
 }
