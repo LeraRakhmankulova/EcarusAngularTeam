@@ -5,6 +5,7 @@ import {ToastService} from '../../../services/toast.service';
 import {AuthService} from '../../../services/auth.service';
 import {DialogService} from "../../../services/dialog.service";
 import {RegisterModalComponent} from "../register-modal/register-modal.component";
+import {SignCompanyModalComponent} from "../sign-company-modal/sign-company-modal.component";
 
 interface DialogData {
   name: string;
@@ -56,6 +57,13 @@ export class SignModalComponent implements OnInit {
 
   openActionDialog() {
     const dialog = this.dialog.openDialog(RegisterModalComponent, {
+      data: {
+        name: 'Иван Иванович'
+      },
+    });
+  }
+  openActionOtherDialog() {
+    const dialog = this.dialog.openDialog(SignCompanyModalComponent, {
       data: {
         name: 'Иван Иванович'
       },

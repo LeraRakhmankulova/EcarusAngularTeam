@@ -11,12 +11,12 @@
   </div>
   <div class="content_wrapper">
     <div class="input_wrapper">
-      <input placeholder="Телефон" type='text' name='login' formControlName='login'/>
-      </div>
+      <input placeholder="Email" type='text' name='email' formControlName='email'/>
+    </div>
     <ng-container
-      *ngIf='control("login")?.touched && control("login")?.errors'
+      *ngIf='control("email")?.touched && control("email")?.errors'
     >
-      <span class="errors">Логин должен содержать минимум 4 символа</span>
+      <span class="errors">Почта должна содержать минимум 4 символа</span>
     </ng-container>
     <div class="input_wrapper">
       <input placeholder='Пароль' type='password' name='password' formControlName='password'/>
@@ -28,7 +28,7 @@
     </ng-container>
     <div class="button_wrapper">
       <div class="button_wrapper_content">
-        <app-modal-button (click)="login()" text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
+        <app-modal-button text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
       </div>
       <div class="link_text_wrapper">
         <div>
@@ -37,10 +37,6 @@
         <div>
           <a (click)="close(true);openActionDialog()">Регистрация</a>
         </div>
-      </div>
-      <div class="button_wrapper_content">
-        <app-modal-button (click)="close(true);openActionOtherDialog()" text='Вход для партнёров' color='black' background='rgba(62, 80, 114, 0.08)' width='100%'
-                          disabled=''></app-modal-button>
       </div>
     </div>
   </div>

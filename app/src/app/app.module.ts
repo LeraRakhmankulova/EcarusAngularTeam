@@ -32,6 +32,8 @@ import {OverlayModule} from "@angular/cdk/overlay";
 import {PortalModule} from "@angular/cdk/portal";
 import {InputComponent} from "./components/ui/input/input.component";
 import {RegisterModalComponent} from "./components/modal/register-modal/register-modal.component";
+import {SignCompanyModalComponent} from "./components/modal/sign-company-modal/sign-company-modal.component";
+import {RegisterCompanyModalComponent} from "./components/modal/register-company-modal/register-company-modal.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +53,8 @@ import {RegisterModalComponent} from "./components/modal/register-modal/register
     ModalContainerComponent,
     RegisterModalComponent,
     SignModalComponent,
+    RegisterCompanyModalComponent,
+    SignCompanyModalComponent,
     InputComponent
   ],
   imports: [
