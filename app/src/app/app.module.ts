@@ -37,6 +37,7 @@ import {RegisterCompanyModalComponent} from "./components/modal/register-company
 import {QRCodeModalComponent} from "./components/modal/qr-code-modal/qr-code-modal.component";
 import { ProfilComponent } from './pages/Profil/ProfilPage.component';
 import { UserpromoCardComponent } from './components/cards/userPromo-card/userpromo-card.component';
+import { HistoryCardComponent } from './components/cards/history-card/history-card.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { UserpromoCardComponent } from './components/cards/userPromo-card/userpr
     QRCodeModalComponent,
     InputComponent,
     ProfilComponent,
-    UserpromoCardComponent
+    UserpromoCardComponent,
+    HistoryCardComponent
   ],
   imports: [
     BrowserModule,
