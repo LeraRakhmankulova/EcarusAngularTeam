@@ -28,10 +28,11 @@ export class SignModalComponent implements OnInit {
     @Optional() @Inject(DIALOG_DATA) public data: DialogData,
   ) {
     this.Form = this.fb.group({
-      login: ['', [Validators.required]],
-      password: ['', [Validators.required]],
+      login: ['', [Validators.required, Validators.minLength(4)]],
+      password: ['', [Validators.required, Validators.minLength(4)]],
       role: 'USER'
     });
+    // this.Form.markAllAsTouched();
   }
 
   ngOnInit() {
@@ -60,5 +61,7 @@ export class SignModalComponent implements OnInit {
       },
     });
   }
-
+  control(name: string) {
+    return this.Form.get(name);
+  }
 }

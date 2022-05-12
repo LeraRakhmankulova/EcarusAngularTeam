@@ -13,10 +13,19 @@
     <div class="input_wrapper">
       <input placeholder="Телефон" type='text' name='login' formControlName='login'/>
       </div>
-
+    <ng-container
+      *ngIf='control("login")?.touched && control("login")?.errors'
+    >
+      <span class="errors">Логин должен содержать минимум 4 символа</span>
+    </ng-container>
     <div class="input_wrapper">
       <input placeholder='Пароль' type='password' name='password' formControlName='password'/>
     </div>
+    <ng-container
+      *ngIf='control("password")?.touched && control("password")?.errors'
+    >
+      <span class="errors">Пароль должен содержать минимум 4 символа</span>
+    </ng-container>
     <div class="button_wrapper">
       <div class="button_wrapper_content">
         <app-modal-button (click)="login()" text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
@@ -30,8 +39,7 @@
         </div>
       </div>
       <div class="button_wrapper_content">
-        <app-modal-button text='Вход для партнёров' color='black'
-                          background='rgba(62, 80, 114, 0.08)' width='100%'
+        <app-modal-button text='Вход для партнёров' color='black' background='rgba(62, 80, 114, 0.08)' width='100%'
                           disabled=''></app-modal-button>
       </div>
     </div>

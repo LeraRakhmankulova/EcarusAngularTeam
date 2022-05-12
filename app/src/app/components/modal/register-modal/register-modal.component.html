@@ -14,17 +14,29 @@
       <input placeholder="Почта" type='email'
                        name='email' formControlName='email'/>
       </div>
+    <ng-container
+      *ngIf='control("email")?.touched && control("email")?.errors'
+    >
+      <span class="errors">Почта должна содержать минимум 4 символа</span>
+    </ng-container>
     <div class="input_wrapper">
       <input placeholder="Телефон" type='text'
                        name='phone_number' formControlName='phone_number'/>
       </div>
+    <ng-container
+      *ngIf='control("phone_number")?.touched && control("phone_number")?.errors'
+    >
+      <span class="errors">Телефон должен содержать минимум 4 символа</span>
+    </ng-container>
     <div class="input_wrapper">
-      <!--      {touched.phone && errors.phone && <p>{errors.phone}</p>}-->
       <input placeholder='Пароль' type='password'
                        name='password' formControlName='password'/>
-      <!--      {touched.password && errors.password &&-->
-      <!--                                    <p>{errors.password}</p>}-->
     </div>
+    <ng-container
+      *ngIf='control("password")?.touched && control("password")?.errors'
+    >
+      <span class="errors">Пароль должен содержать минимум 4 символа</span>
+    </ng-container>
     <div class="button_wrapper">
       <div class="button_wrapper_content">
         <app-modal-button (click)='registration()' text='Получить код' color='white' background='#07C88E'

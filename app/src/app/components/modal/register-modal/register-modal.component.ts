@@ -18,7 +18,6 @@ interface DialogData {
 })
 export class RegisterModalComponent implements OnInit {
   regForm: FormGroup;
-
   constructor(
     private dialogRef: DialogRef<RegisterModalComponent>,
     private dialog: DialogService,
@@ -28,9 +27,9 @@ export class RegisterModalComponent implements OnInit {
     @Optional() @Inject(DIALOG_DATA) public data: DialogData,
   ) {
     this.regForm = this.fb.group({
-      email: ['', [Validators.required]],
-      phone_number: ['', [Validators.required]],
-      password: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.minLength(4), Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
+      phone_number: ['', [Validators.required, Validators.minLength(4)]],
+      password: ['', [Validators.required, Validators.minLength(4)]],
       role: 'USER'
     });
   }
@@ -63,5 +62,7 @@ export class RegisterModalComponent implements OnInit {
       },
     });
   }
-
+  control(name: string) {
+    return this.regForm.get(name);
+  }
 }
