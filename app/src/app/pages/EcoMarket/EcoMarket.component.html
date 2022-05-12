@@ -52,7 +52,7 @@
         </app-modal-button>
       </div>
       <div class="cards_block">
-        <div class="card_product">
+        <div class="card_product" (click)="openActionDialog()">
           <app-promo-card price='200'></app-promo-card>
         </div>
         <div *ngFor="let i of data_cards" class="card_product">

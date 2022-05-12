@@ -34,6 +34,7 @@ import {InputComponent} from "./components/ui/input/input.component";
 import {RegisterModalComponent} from "./components/modal/register-modal/register-modal.component";
 import {SignCompanyModalComponent} from "./components/modal/sign-company-modal/sign-company-modal.component";
 import {RegisterCompanyModalComponent} from "./components/modal/register-company-modal/register-company-modal.component";
+import {QRCodeModalComponent} from "./components/modal/qr-code-modal/qr-code-modal.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import {RegisterCompanyModalComponent} from "./components/modal/register-company
     SignModalComponent,
     RegisterCompanyModalComponent,
     SignCompanyModalComponent,
+    QRCodeModalComponent,
     InputComponent
   ],
   imports: [

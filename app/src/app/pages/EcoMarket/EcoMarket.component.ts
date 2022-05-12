@@ -1,5 +1,7 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {DataItems} from '../../mocks/productMock'
+import {DialogService} from "../../services/dialog.service";
+import {QRCodeModalComponent} from "../../components/modal/qr-code-modal/qr-code-modal.component";
 
 @Component({
   selector: 'app-eco-market',
@@ -17,7 +19,7 @@ export class EcoMarketComponent implements OnInit {
   @Input() allTp: Array<any>;
   @Input() allBr: Array<any>;
 
-  constructor() {
+  constructor(private dialog: DialogService) {
     this.data_cards = DataItems;
     this.gender = [
       {title: "Мужской", checked: false},
@@ -45,5 +47,8 @@ export class EcoMarketComponent implements OnInit {
 
   }
   ngOnInit(): void {
+  }
+  openActionDialog() {
+    const dialog = this.dialog.openDialog(QRCodeModalComponent, {});
   }
 }
