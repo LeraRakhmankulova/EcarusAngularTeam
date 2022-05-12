@@ -4,6 +4,7 @@ import {MainComponent} from "./pages/Main/main.component";
 import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import {MapComponent} from "./components/map/Map.component";
 import {FooterComponent} from "./components/footer/footer.component.";
+import { ProfilComponent } from './pages/Profil/ProfilPage.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path:'about_service',
     component: FooterComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'profil',
+    component: ProfilComponent,
     pathMatch:'full'
   }
 

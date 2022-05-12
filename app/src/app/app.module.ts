@@ -35,6 +35,9 @@ import {RegisterModalComponent} from "./components/modal/register-modal/register
 import {SignCompanyModalComponent} from "./components/modal/sign-company-modal/sign-company-modal.component";
 import {RegisterCompanyModalComponent} from "./components/modal/register-company-modal/register-company-modal.component";
 import {QRCodeModalComponent} from "./components/modal/qr-code-modal/qr-code-modal.component";
+import { ProfilComponent } from './pages/Profil/ProfilPage.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +60,8 @@ import {QRCodeModalComponent} from "./components/modal/qr-code-modal/qr-code-mod
     RegisterCompanyModalComponent,
     SignCompanyModalComponent,
     QRCodeModalComponent,
-    InputComponent
+    InputComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
