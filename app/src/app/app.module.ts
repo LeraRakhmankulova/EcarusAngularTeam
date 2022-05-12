@@ -36,6 +36,7 @@ import {SignCompanyModalComponent} from "./components/modal/sign-company-modal/s
 import {RegisterCompanyModalComponent} from "./components/modal/register-company-modal/register-company-modal.component";
 import {QRCodeModalComponent} from "./components/modal/qr-code-modal/qr-code-modal.component";
 import { ProfilComponent } from './pages/Profil/ProfilPage.component';
+import { UserpromoCardComponent } from './components/cards/userPromo-card/userpromo-card.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { ProfilComponent } from './pages/Profil/ProfilPage.component';
     SignCompanyModalComponent,
     QRCodeModalComponent,
     InputComponent,
-    ProfilComponent
+    ProfilComponent,
+    UserpromoCardComponent
   ],
   imports: [
     BrowserModule,

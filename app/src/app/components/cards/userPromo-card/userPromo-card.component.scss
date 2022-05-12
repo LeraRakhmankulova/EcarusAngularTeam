@@ -1,0 +1,44 @@
+.wrapper{
+    border-top: 0.5px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+    padding: 1.3em 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 6fr 4fr;
+    grid-template-areas: "card info button";
+    .card_img{
+      grid-area: card;
+    }
+    .card_info{
+      grid-area: info;
+      padding: 0 1.5em;
+      p{
+        margin: 0;
+        padding: 0;
+      }
+      .link{
+        color: #07C88E;
+      }
+      .date{
+        padding-bottom: 0.5em;
+      }
+      .info{
+        color: rgba(0, 11, 38, 0.4);
+        font-weight: 500;
+      }
+    }
+    .card_button{
+      grid-area: button;
+      padding: 0 0.5em;
+      button{
+        justify-content: center;
+        align-items: center;
+        background: rgba(62, 80, 114, 0.08);
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+        padding: 0.7em;
+      }
+    }
+}
+    
