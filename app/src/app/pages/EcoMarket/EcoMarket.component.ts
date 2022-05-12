@@ -1,11 +1,10 @@
-import './scroll_custom.css'
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {DataItems} from '../../mocks/productMock'
 
 @Component({
   selector: 'app-eco-market',
   templateUrl: './EcoMarket.component.html',
-  styleUrls: ['./EcoMarket.component.sass'],
+  styleUrls: ['./EcoMarket.component.sass', './scroll_custom.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
