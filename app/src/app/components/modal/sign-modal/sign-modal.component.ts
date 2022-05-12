@@ -33,7 +33,6 @@ export class SignModalComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(4)]],
       role: 'USER'
     });
-    // this.Form.markAllAsTouched();
   }
 
   ngOnInit() {
@@ -57,16 +56,10 @@ export class SignModalComponent implements OnInit {
 
   openActionDialog() {
     const dialog = this.dialog.openDialog(RegisterModalComponent, {
-      data: {
-        name: 'Иван Иванович'
-      },
     });
   }
   openActionOtherDialog() {
     const dialog = this.dialog.openDialog(SignCompanyModalComponent, {
-      data: {
-        name: 'Иван Иванович'
-      },
     });
   }
   control(name: string) {

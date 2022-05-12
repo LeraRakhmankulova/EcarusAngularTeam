@@ -2,7 +2,6 @@ import {ChangeDetectionStrategy, Component, Inject, OnInit, Optional} from '@ang
 import {DIALOG_DATA, DialogRef} from '@angular/cdk-experimental/dialog';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {DialogService} from "../../../services/dialog.service";
-import {RegisterModalComponent} from "../register-modal/register-modal.component";
 import {RegisterCompanyModalComponent} from "../register-company-modal/register-company-modal.component";
 
 interface DialogData {
@@ -29,7 +28,6 @@ export class SignCompanyModalComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(4)]],
       role: 'USER'
     });
-    // this.Form.markAllAsTouched();
   }
 
   ngOnInit() {
@@ -40,9 +38,6 @@ export class SignCompanyModalComponent implements OnInit {
 
   openActionDialog() {
     const dialog = this.dialog.openDialog(RegisterCompanyModalComponent, {
-      data: {
-        name: 'Иван Иванович'
-      },
     });
   }
   control(name: string) {

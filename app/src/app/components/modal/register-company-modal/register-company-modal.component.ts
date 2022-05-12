@@ -41,9 +41,6 @@ export class RegisterCompanyModalComponent implements OnInit {
 
   openActionDialog() {
     const dialog = this.dialog.openDialog(SignCompanyModalComponent, {
-      data: {
-        name: 'Иван Иванович'
-      },
     });
   }
   control(name: string) {

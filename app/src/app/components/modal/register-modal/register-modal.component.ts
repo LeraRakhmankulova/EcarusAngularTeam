@@ -5,6 +5,7 @@ import {ToastService} from '../../../services/toast.service';
 import {AuthService} from '../../../services/auth.service';
 import {DialogService} from "../../../services/dialog.service";
 import {SignModalComponent} from "../sign-modal/sign-modal.component";
+import {SignCompanyModalComponent} from "../sign-company-modal/sign-company-modal.component";
 
 interface DialogData {
   name: string;
@@ -47,7 +48,7 @@ export class RegisterModalComponent implements OnInit {
     this.authService.registration(this.regForm.value).subscribe(res => {
       this.toast.success('Регистрация прошла успешно');
     }, err => {
-      console.log(err);
+      this.toast.error('Такой пользователь уже существует');
     });
   }
 
@@ -57,9 +58,10 @@ export class RegisterModalComponent implements OnInit {
 
   openActionDialog() {
     const dialog = this.dialog.openDialog(SignModalComponent, {
-      data: {
-        name: 'Иван Иванович'
-      },
+    });
+  }
+  openActionOtherDialog() {
+    const dialog = this.dialog.openDialog(SignCompanyModalComponent, {
     });
   }
   control(name: string) {
