@@ -10,9 +10,7 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./Map.component.sass'],
 })
 export class MapComponent implements AfterViewInit {
-
   map: any;
-
   constructor() {
   }
 

@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { PointsService } from 'src/app/services/points.service';
 
 @Component({
   selector: 'app-map-page',
   templateUrl: './MapPage.component.html',
-  styleUrls: ['./MapPage.component.sass']
+  styleUrls: ['./MapPage.component.sass'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MapPageComponent implements OnInit {
+export class MapPageComponent {
+  collPoints$ = this.collPointsService.collPoints$
+  selected = 0;
 
-  constructor() { }
+  constructor(private collPointsService: PointsService) {
+  }
 
-  ngOnInit(): void {
+  onChange(count: number) {
+    this.selected = count;
   }
 
 }
