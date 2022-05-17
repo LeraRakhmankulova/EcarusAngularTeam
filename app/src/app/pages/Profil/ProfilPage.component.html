@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Личный кабинет</h1>
+    <h2>Личный кабинет</h2>
     <div class="person">
         <div class="person_card">
             <div class="avatar">
@@ -16,17 +16,19 @@
         <div class="person_promo_history">
             <nav class="navbar">
                 <ul class="nav_link">
-                    <li>Промокоды</li>
-                    <li>История</li>
-                    <!-- <li><NavLink to='/promo'>Промокоды</NavLink></li>
-                    <li><NavLink to='/history'>История</NavLink></li> -->
+                    <li>
+                        <a routerLink="/profil/promocode">
+                            Промокоды
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/profil/history">
+                            История
+                        </a>
+                    </li>
+                    <router-outlet></router-outlet>
                 </ul>
             </nav>
-            <userPromo-card image='/assets/images/green_promo.png' button='Показать qr-код'></userPromo-card>
-           <userPromo-card image='/assets/images/grey_promo.png' button='Показать qr-код'></userPromo-card>
-           <userPromo-card image='/assets/images/grey_promo.png' button='Показать qr-код'></userPromo-card>
-            <!-- <history-card></history-card>
-            <history-card></history-card> -->
         </div>
     </div>
 </div>
