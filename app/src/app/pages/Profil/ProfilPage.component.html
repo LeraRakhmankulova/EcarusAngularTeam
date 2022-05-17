@@ -17,18 +17,27 @@
             <nav class="navbar">
                 <ul class="nav_link">
                     <li>
-                        <a routerLink="/profil/promocode">
+                        <a 
+                        routerLink="/profil/promocode" 
+                        [routerLinkActiveOptions]='{exact:true}'
+                        routerLinkActive='location_link'
+                        >
                             Промокоды
                         </a>
                     </li>
                     <li>
-                        <a routerLink="/profil/history">
+                        <a 
+                        routerLink="/profil/history" 
+                        routerLinkActive='location_link'
+                        >
                             История
                         </a>
                     </li>
-                    <router-outlet></router-outlet>
                 </ul>
             </nav>
+            <div class="router">
+                <router-outlet></router-outlet>
+            </div>
         </div>
     </div>
 </div>
