@@ -8,10 +8,10 @@ import { PointsService } from 'src/app/services/points.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MapPageComponent {
-  collPoints$ = this.collPointsService.collPoints$
+  points$ = this.pointsService.points$
   selected = 0;
 
-  constructor(private collPointsService: PointsService) {
+  constructor(private pointsService: PointsService) {
   }
 
   onChange(count: number) {

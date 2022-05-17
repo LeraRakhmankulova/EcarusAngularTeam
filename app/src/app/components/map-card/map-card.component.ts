@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map-card.component.html',
   styleUrls: ['./map-card.component.scss']
 })
-export class MapCardComponent implements OnInit {
+export class MapCardComponent {
 
+ 
   constructor() { }
 
   ngOnInit(): void {

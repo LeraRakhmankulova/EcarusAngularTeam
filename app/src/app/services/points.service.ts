@@ -53,6 +53,6 @@ const DataItems: Array<IPoint> = [
 	providedIn: 'root'
 })
 export class PointsService {
-	collPoints$: BehaviorSubject<Array<IPoint>> = new BehaviorSubject<Array<IPoint>>(DataItems);
+	points$: BehaviorSubject<Array<IPoint>> = new BehaviorSubject<Array<IPoint>>(DataItems);
 }
 
