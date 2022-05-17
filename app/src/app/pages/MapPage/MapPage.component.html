@@ -1,7 +1,27 @@
 <div class="map_content">
     <app-map></app-map>
-</div>
+    <div class="map_upper_content">
+        <div class="content_container">
+            <div class="general_search">
+                <input placeholder='Поиск' />
+            </div>
+            <div class="general_search">
+                <select class="shops">
+                    <option value="" disabled selected>Выбрано 3 магазина</option>
+                    <option>Выбрать все</option>
+                    <option>H&M</option>
+                    <option>P&B</option>
+                    <option>Adidas</option>
+                    <option>Nike</option>
+                    <option>Reebok</option>
+                </select>
+                <select class="materials">
+                    <option value="" disabled selected>Материалы</option>
+                    <option>Пункт 1</option>
+                </select>
+            </div>
+        </div>
 
-<div class="map_upper_content">
-    <h1>Hello!</h1>
+        <map-card></map-card>
+    </div>
 </div>

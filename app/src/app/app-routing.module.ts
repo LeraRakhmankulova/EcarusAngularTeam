@@ -5,6 +5,7 @@ import {EcoMarketComponent} from "./pages/EcoMarket/EcoMarket.component";
 import {MapComponent} from "./components/map/Map.component";
 import {FooterComponent} from "./components/footer/footer.component.";
 import { ProfilComponent } from './pages/Profil/ProfilPage.component';
+import { MapPageComponent } from './pages/MapPage/MapPage.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
   },
   {
     path:'collection_points',
-    component: MapComponent,
+    component: MapPageComponent,
     pathMatch:'full'
   },
   {

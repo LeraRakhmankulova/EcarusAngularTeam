@@ -38,6 +38,7 @@ import {QRCodeModalComponent} from "./components/modal/qr-code-modal/qr-code-mod
 import { ProfilComponent } from './pages/Profil/ProfilPage.component';
 import { UserpromoCardComponent } from './components/cards/userPromo-card/userpromo-card.component';
 import { HistoryCardComponent } from './components/cards/history-card/history-card.component';
+import { MapCardComponent } from './components/map-card/map-card.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { HistoryCardComponent } from './components/cards/history-card/history-ca
     InputComponent,
     ProfilComponent,
     UserpromoCardComponent,
-    HistoryCardComponent
+    HistoryCardComponent,
+    MapCardComponent
   ],
   imports: [
     BrowserModule,
