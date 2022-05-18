@@ -6,7 +6,7 @@ SwiperCore.use([Navigation, Autoplay]);
 @Component({
   selector: 'app-swiper',
   templateUrl: './swiper-banner.component.html',
-  styleUrls: ['./swiper-banner.component.scss'],
+  styleUrls: ['./swiper-banner.component.sass'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	encapsulation: ViewEncapsulation.None
 })

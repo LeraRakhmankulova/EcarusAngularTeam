@@ -5,7 +5,7 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.sass']
 })
-export class ModalButtonComponent implements OnInit {
+export class ModalButtonComponent {
   @Input() text: string;
   @Input() color: string;
   @Input() background: string;
@@ -19,8 +19,4 @@ export class ModalButtonComponent implements OnInit {
     this.width = "";
     this.func = "";
   }
-
-  ngOnInit(): void {
-  }
-
 }

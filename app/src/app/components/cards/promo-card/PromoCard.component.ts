@@ -12,5 +12,4 @@ export class PromoCardComponent {
   constructor() {
     this.price ="";
   }
-
 }

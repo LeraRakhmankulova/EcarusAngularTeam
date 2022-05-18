@@ -3,7 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 @Component({
   selector: 'app-checkbox',
   templateUrl: './checkbox.component.html',
-  styleUrls: ['./checkbox.component.scss']
+  styleUrls: ['./checkbox.component.sass']
 })
 export class CheckboxComponent {
 
@@ -14,5 +14,4 @@ export class CheckboxComponent {
     this.id = "";
     this.label = "";
   }
-
 }

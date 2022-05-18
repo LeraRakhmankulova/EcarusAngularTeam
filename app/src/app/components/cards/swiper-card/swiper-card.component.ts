@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-swiperCard',
   templateUrl: './swiper-card.component.html',
-  styleUrls: ['./swiper-card.component.scss']
+  styleUrls: ['./swiper-card.component.sass']
 })
 export class SwiperCardComponent implements OnInit {
 

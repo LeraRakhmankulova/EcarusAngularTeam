@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-banner',
   templateUrl: './banner-card.component.html',
-  styleUrls: ['./banner-card.component.scss']
+  styleUrls: ['./banner-card.component.sass']
 })
 export class BannerCardComponent {
 
