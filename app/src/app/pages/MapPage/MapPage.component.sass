@@ -10,7 +10,7 @@
         top: 0
         box-sizing: border-box
         z-index: 500
-        padding: 0 8em
+        padding: 0 6em
         margin: 5em 0
         width: 100%
         
@@ -21,31 +21,39 @@
             width: 100%
             display: flex
 
-            input
-                background-image: url(/assets/images/search.svg)
-                background-repeat: no-repeat
-                background-position: 1.4em
-                padding: 1em 3.3em
-                border-radius: 8px
-                border: none
-                box-shadow: 0px 2px 10px $c-dblue
-                border-radius: 8px
-                font-size: 14px
-                width: 100%
+            &__search
+                padding: 0.5em 1em
+                width: 50%
+                display: flex
 
-        &__search
-            padding: 0.5em 1em
-            width: 50%
-            display: flex
+                input
+                    background-image: url(/assets/images/search.svg)
+                    background-repeat: no-repeat
+                    background-position: 1.4em
+                    padding: 1em 3.3em
+                    border-radius: 8px
+                    border: none
+                    box-shadow: 0px 2px 10px $c-dblue
+                    border-radius: 8px
+                    font-size: 14px
+                    width: 100%
 
-        &__select
-            margin: 0 1em
-            padding: 1em 1em
-            border-radius: 8px
-            font-size: 14px
-            border: none
-            box-shadow: 0px 2px 10px $c-dblue
-            border-radius: 8px
-            width: 100%
+            &__select
+                width: 50%
+                display: flex
+                padding: 0.5em 1em
+
+                &--grey
+                    color: $c-dgrey
+
+                select
+                    margin: 0em 1em
+                    padding: 1em 1.5em
+                    border-radius: 8px
+                    font-size: 14px
+                    border: none
+                    box-shadow: 0px 2px 10px $c-dblue
+                    border-radius: 8px
+                    width: 100%               
 
     

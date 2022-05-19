@@ -1,6 +1,6 @@
 <div class="ecoMarket">
   <div class="ecoMarket__content">
-    <h2>ЭкоМаркет</h2>
+    <h1>ЭкоМаркет</h1>
     <ul>
       <li>
         <a>По популярности</a>
@@ -14,7 +14,9 @@
     </ul>
   </div>
   <div class="ecoMarket__mainContent">
+
     <div class="ecoMarket__mainContent__search">
+      <div class="border">
         <div class="ecoMarket__mainContent__search__type">
           <h4>Пол</h4>
           <div *ngFor="let i of gender">
@@ -35,14 +37,17 @@
             <app-checkbox label="{{j.title}}" id="{{j.title}}"></app-checkbox>
           </div>
         </div>
+      </div>
       <app-modal-button text="Сбросить фильтры" color="black" background="rgba(62, 80, 114, 0.08)" width='100%'>
       </app-modal-button>
     </div>
+
     <div class="ecoMarket__mainContent__blocks">
       <div class="ecoMarket__mainContent__blocks__card" (click)="openActionDialog()">
         <app-promo-card price='200'></app-promo-card>
       </div>
-      <div *ngFor="let i of data_cards" class="card_product">
+
+      <div class="ecoMarket__mainContent__blocks__card" *ngFor="let i of data_cards">
         <app-product-card price="{{i.price}}" brand="{{i.brand}}" name="{{i.nameDesc}}" category="{{i.category}}"
           picture="{{i.picture}}"></app-product-card>
       </div>
