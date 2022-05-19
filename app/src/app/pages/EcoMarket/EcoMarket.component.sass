@@ -1,126 +1,131 @@
 @import "mixins.sass" 
 
-@mixin all
-  @media screen and (max-width: 3080px)
-    .hidden_button
-      display: none
+// @mixin all
+//   @media screen and (max-width: 3080px)
+//     .hidden_button
+//       display: none
 
-@mixin desktop
-  @media screen and (max-width: 1280px)
-    .container
-      margin: 0 8em
+// @mixin desktop
+//   @media screen and (max-width: 1280px)
+//     .container
+//       margin: 0 8em
 
-    .card_product
-      margin: 0 0.3em 1em 0.3em
+//     .card_product
+//       margin: 0 0.3em 1em 0.3em
 
 
-@mixin laptop
-  @media screen and (max-width: 992px)
-    .container
-      margin: 0 2em 
+// @mixin laptop
+//   @media screen and (max-width: 992px)
+//     .container
+//       margin: 0 2em 
 
-@mixin tablets
-  @media screen and (max-width: 768px)
-    .page_wrapper
-      padding: 0 
-      margin: 0 
+// @mixin tablets
+//   @media screen and (max-width: 768px)
+//     .page_wrapper
+//       padding: 0 
+//       margin: 0 
 
-    .upper_block_container
-      padding: 0.2em 0 0.5em 0
-      display: block
-      margin: 0
+//     .upper_block_container
+//       padding: 0.2em 0 0.5em 0
+//       display: block
+//       margin: 0
 
-      .links
-        display: none
+//       .links
+//         display: none
 
-    .search_block_wrapper
-      display: none
+//     .search_block_wrapper
+//       display: none
 
-    .main_content
-      display: flex 
+//     .main_content
+//       display: flex 
 
-    .cards_block
-      display: block
-      width: 100%
-      margin: 0 
+//     .cards_block
+//       display: block
+//       width: 100%
+//       margin: 0 
 
-      .card_product
-        width: 100%
-        margin: 0
-        padding: 0 0 3em 0 
+//       .card_product
+//         width: 100%
+//         margin: 0
+//         padding: 0 0 3em 0 
 
-    h2
-      font-size: 30px 
+//     h2
+//       font-size: 30px 
 
-    .hidden_button
-      display: contents 
+//     .hidden_button
+//       display: contents 
 
-body
-  @include all
-  @include laptop
-  @include desktop
-  @include tablets
+// body
+//   @include all
+//   @include laptop
+//   @include desktop
+//   @include tablets
 
-.page_wrapper
+.ecoMarket
   z-index: 10
 
-.upper_block_container
-  padding: 1em 0 3em 0
-  display: flex
-  justify-content: space-between
-
-  h1
-    font-style: normal
-    font-weight: bold
-    font-size: 40px
-    line-height: 48px
-
-  ul
-    padding-top: 1em
+  &__content
+    padding: 1em 0 3em 0
     display: flex
-    list-style-type: none
+    justify-content: space-between
 
-  li
-    padding-top: 0.75em
-    margin: 0 0.25em
+    h1
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 48px
 
-  a
-    cursor: pointer
-    font-weight: 400
-    font-size: 14px
-    line-height: 20px
-    background: $c-dblue
-    padding: 0.75em
-    border-radius: 61px
+    ul
+      padding-top: 1em
+      display: flex
+      list-style-type: none
 
-    &:hover
-      background: black
-      color: white
+    li
+      padding-top: 0.75em
+      margin: 0 0.25em
 
-    &:active
-      box-shadow: 0px 0px 5px rgba(121, 121, 121, 0.12), 0px 4px 24px rgba(21, 45, 103, 0.12)
-      background: black
-      color: white
+    a
+      cursor: pointer
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      background: $c-dblue
+      padding: 0.75em
+      border-radius: 61px
 
-.main_content
-  display: grid
-  grid-template-columns: 3fr 9fr
-  grid-template-areas: "search_block cards_block"
+      &:hover
+        background: black
+        color: white
 
-  .cards_block
-    grid-area: cards_block
+      &:active
+        box-shadow: 0px 0px 5px rgba(121, 121, 121, 0.12), 0px 4px 24px rgba(21, 45, 103, 0.12)
+        background: black
+        color: white
 
-.search_block_wrapper
-  button
-    padding: 0.85em
-    margin-top: 1.25em
+  &__mainContent
+    display: grid
+    grid-template-columns: 3fr 9fr
+    grid-template-areas: "search_block cards_block"
+    
+    &___blocks
+      grid-area: cards_block
 
-.search_type
-  padding: 0.5em
+    &__search
+      button
+        padding: 0.85em
+        margin-top: 1.25em
+      &__type
+        padding: 0.5em
 
-  h4
-    padding: 0
-    margin-bottom: 1em
+        h4
+          padding: 0
+          margin-bottom: 1em
+
+  
+
+
+
+
 
 .cards_block
   display: flex

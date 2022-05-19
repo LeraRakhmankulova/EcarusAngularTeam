@@ -1,7 +1,6 @@
 <header class="header">
-  <div class="container">
-    <div class="header_content_wrapper">
-      <div class="header_logo_wrapper">
+    <div class="header__content">
+      <div class="header__content__logo">
         <a [routerLink]="['/']">
           <img src="/assets/images/logo.svg" />
         </a>
@@ -12,7 +11,7 @@
           <img src="../../../assets/images/men.svg" /> енто меню для мобилки
         </button>
       </div> -->
-      <nav class="navbar">
+      <nav class="header__content__navbarLside">
         <ul>
           <li>
             <a [routerLink]="['/']"
@@ -42,7 +41,8 @@
           </li>
         </ul>
       </nav>
-      <nav class="side_part">
+
+      <nav class="header__content__navbarRside">
         <ul>
           <li>
             <img src="/assets/images/point.svg" />
@@ -57,5 +57,4 @@
         </ul>
       </nav>
     </div>
-  </div>
 </header>
