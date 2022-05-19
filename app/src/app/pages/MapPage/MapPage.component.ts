@@ -17,5 +17,4 @@ export class MapPageComponent {
   onChange(count: number) {
     this.selected = count;
   }
-
 }
