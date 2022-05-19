@@ -1,3 +1,5 @@
+@import "mixins.sass" 
+
 @mixin desktop 
     @media screen and (max-width: 1280px) 
         .text_content
@@ -11,23 +13,23 @@
 @mixin laptop 
     @media screen and (max-width: 992px) 
         .text_content
-            margin: 4.5em 0 !important
+            margin: 4.5em 0 
         .promo_card
-            padding: 0.6em !important
+            padding: 0.6em 
         .text_content
             p
-                font-size: 10px !important
+                font-size: 10px 
 
 
 @mixin tablets 
     @media screen and (max-width: 768px)
         .text_content
-            margin: 8em 0 !important
+            margin: 8em 0 
         .promo_card
-            padding: 1.5em !important
+            padding: 1.5em 
         .text_content
             p
-                font-size: 14px !important
+                font-size: 14px 
 
 
 body
@@ -40,7 +42,7 @@ body
     margin: -0.5em 0 0 0.2em
 
 .wrapper_icon
-    background: linear-gradient(158.47deg, #00D5C7 16.08%, #FFEE57 85.85%)
+    background: $c-linear
     padding: 0.4em 0.45em
     margin: 1.25em 0.3em
     border-radius: 10px
@@ -63,7 +65,7 @@ body
     font-weight: 400
     font-size: 14px
     line-height: 18px
-    color: rgba(0, 11, 38, 0.56)
+    color: black
     margin: -10px 0 
     padding: 0
 

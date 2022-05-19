@@ -1,3 +1,5 @@
+@import "mixins.sass" 
+
 @mixin desktop 
   @media screen and (max-width: 1280px)
     .wrapper
@@ -38,7 +40,7 @@
     @include laptop
     @include tablets
     @include phones
-    box-shadow: 0px -0.5px 0px rgba(0, 0, 0, 0.12)
+    box-shadow: 0px -0.7px 0px $c-grey
     padding: 1em 0
 
 .container

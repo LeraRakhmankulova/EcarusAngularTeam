@@ -1,3 +1,5 @@
+@import "mixins.sass" 
+
 @mixin tablets
   @media screen and (max-width: 768px)
     .modal_content
@@ -35,11 +37,11 @@ body
   left: 0
   height: 100vh
   width: 100vw
-  background: rgba(0, 0, 0, 0.4)
+  background: black
   display: flex
   align-items: center
   justify-content: center
-  border: thin solid rgba(18, 34, 88, 0.12)
+  border: thin solid $c-grey
   z-index: 2
 
 .modal_wrapper
@@ -79,9 +81,9 @@ body
 .button_wrapper
   button
     &:hover
-      box-shadow: 0 0 10px #00000033
+      box-shadow: 0 0 10px black
     &:active
-      box-shadow: 0 0 15px #00000033
+      box-shadow: 0 0 15px black
       transform: translateY(-2px)
 
   .button_wrapper_content
@@ -98,7 +100,7 @@ body
     margin: 10px
 
   a
-    color:  #07C88E
+    color:  $c-primary
     text-decoration: none
     cursor: pointer
 
@@ -130,8 +132,8 @@ body
     width: 100% 
     padding: 1.5em 1em
     border-radius: 8px
-    border: 1px solid rgba(0, 11, 38, 0.16)
-    color: rgba(0, 11, 38, 0.4)
+    border: 1px solid $c-dgrey
+    color: $c-dgrey
     
   p
     margin: 0 0 0.6em 0.3em

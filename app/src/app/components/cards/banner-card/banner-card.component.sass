@@ -1,3 +1,4 @@
+@import "mixins.sass"  
 h2
     font-size: calc(18px + 10 * (100vw / 1280))
     font-weight: bold
@@ -10,7 +11,7 @@ h2
 
 .wrapperCard
     height: 100%
-    border: 1px solid rgba(18, 34, 88, 0.12)
+    border: 1px solid $c-grey
     border-radius: 18px
     display: flex
 
@@ -35,8 +36,8 @@ h2
         padding: 1.4em
         width: 20px
         height: 20px
-        background-position: center !important
-        background: rgba(62, 80, 114, 0.08) url(/assets/images/right-arrow.svg) no-repeat 
+        background-position: center 
+        background: $c-grey url(/assets/images/right-arrow.svg) no-repeat 
    
 .wrapperImage
     display: flex

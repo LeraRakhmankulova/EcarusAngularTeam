@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Inter:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&family=Red+Hat+Display:wght@300;400&family=Roboto+Slab:wght@600;700;800&display=swap')
 @import '~swiper/swiper.min.css'
+@import "mixins.sass" 
 
 .swiper-button-prev::after, .swiper-button-next::after
 	display: none
@@ -11,7 +12,7 @@
 	width: 45px
 	height: 45px
 	border-radius: 100%
-	box-shadow: 0px 4px 15px rgba(0, 11, 38, 0.12)
+	box-shadow: 0px 4px 15px $c-dgrey
 	background: white url("/assets/images/next.svg") no-repeat 50%
 	margin-right: -5px
 	z-index: 2
@@ -21,7 +22,7 @@
 	align-items: center
 	justify-content: center
 	border-radius: 100%
-	box-shadow: 0px 4px 15px rgba(0, 11, 38, 0.12)
+	box-shadow: 0px 4px 15px $c-dgrey
 	background: white url("/assets/images/prev.svg") no-repeat 50%
 	margin-left: -5px
 	z-index: 2

@@ -1,3 +1,5 @@
+@import "mixins.sass" 
+
 .info_product_card
   padding: 0
   width: 100%
@@ -7,7 +9,7 @@
     font-size: 16px
     line-height: 20px
     align-items: center
-    color: rgba(0, 11, 38, 0.56)
+    color: $c-dgrey
 
   p
     padding: 0.4em 0
@@ -18,7 +20,7 @@
     line-height: 20px
     display: flex
     align-items: center
-    color: rgba(0, 11, 38, 0.88)
+    color: $c-dgrey
 
   img
     margin: 0 0.2em 0 0
@@ -27,7 +29,7 @@
 
 .brand
   background: white
-  box-shadow: 0px 4px 24px rgba(51, 51, 51, 0.12)
+  box-shadow: 0px 4px 24px $c-light
   border-radius: 10px
   padding: 0.5em
   position: absolute
@@ -47,7 +49,7 @@
     margin: 0.2em
 
 .wrapper_icon
-  background: linear-gradient(158.47deg, #00D5C7 16.08%, #FFEE57 85.85%)
+  background: $c-linear
   padding: 0.3em 0.45em
   margin: 1.25em 0.3em
   border-radius: 10px
