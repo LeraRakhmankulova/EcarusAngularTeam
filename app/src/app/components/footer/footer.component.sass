@@ -1,63 +1,54 @@
 @import "mixins.sass" 
 
-@mixin desktop 
-  @media screen and (max-width: 1280px)
-    .wrapper
-        padding: 0 7em
-        font-size: 14px
+// @mixin desktop 
+//   @media screen and (max-width: 1280px)
+//     .wrapper
+//         padding: 0 7em
+//         font-size: 14px
 
-@mixin laptop 
-  @media screen and (max-width: 1000px)
-    .wrapper
-        padding: 0 2em
-        font-size: 14px
-@mixin tablets 
-  @media screen and (max-width: 768px)
-    .wrapper
-        padding: 0
-        text-align: center
-        justify-content: center
-        flex-wrap: wrap
-        font-size: 16px
+// @mixin laptop 
+//   @media screen and (max-width: 1000px)
+//     .wrapper
+//         padding: 0 2em
+//         font-size: 14px
+// @mixin tablets 
+//   @media screen and (max-width: 768px)
+//     .wrapper
+//         padding: 0
+//         text-align: center
+//         justify-content: center
+//         flex-wrap: wrap
+//         font-size: 16px
 
-@mixin phones 
-  @media screen and (max-width: 480px)
-    .wrapper
-        padding: 0
-        display: flex
-        flex-direction: column
-        text-align: center
-        justify-content: center
-        flex-wrap: wrap
-        font-size: 16px
+// @mixin phones 
+//   @media screen and (max-width: 480px)
+//     .wrapper
+//         padding: 0
+//         display: flex
+//         flex-direction: column
+//         text-align: center
+//         justify-content: center
+//         flex-wrap: wrap
+//         font-size: 16px
 
-        div
-            text-align: center
-            justify-content: center
+//         div
+//             text-align: center
+//             justify-content: center
   
 .footer
-    @include desktop
-    @include laptop
-    @include tablets
-    @include phones
     box-shadow: 0px -0.7px 0px $c-grey
     padding: 1em 0
-
-.container
-    width: 100%
-
-.wrapper
     color: black
     display: flex
     font-size: 16px
     font-weight: normal
 
-    div
+    &__mail, &__phone
         padding: 0 0.5em
         display: flex
-        
-    .icon_wrapper
-        p
-          padding: 0 0 0 0.7em
-          margin: 0
-    
+
+        &__icon
+          p
+            padding: 0 0 0 0.7em
+            margin: 0
+      
