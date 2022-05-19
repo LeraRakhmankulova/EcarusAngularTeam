@@ -1,8 +1,26 @@
 @import "mixins.sass" 
 
-.info_product_card
+.cardProduct
   padding: 0
   width: 100%
+
+  h6
+    background: white
+    box-shadow: 0px 4px 24px $c-light
+    border-radius: 10px
+    padding: 0.5em
+    position: absolute
+    margin-top: 20px
+    margin-left: 20px
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+
+  img
+    margin: 0 0.2em 0 0
+    padding-bottom: 0.2em
+    width: 100%
 
   label
     font-weight: 500
@@ -22,37 +40,26 @@
     align-items: center
     color: $c-dgrey
 
-  img
-    margin: 0 0.2em 0 0
-    padding-bottom: 0.2em
-    width: 100%
-
-.brand
-  background: white
-  box-shadow: 0px 4px 24px $c-light
-  border-radius: 10px
-  padding: 0.5em
-  position: absolute
-  margin-top: 20px
-  margin-left: 20px
-  font-style: normal
-  font-weight: 400
-  font-size: 14px
-  line-height: 18px
-
-.union_wrapper
-  padding-top: 1em
-  display: flex
+  &__union
+    padding-top: 1em
+    display: flex
+    
+    &__image
+      background: $c-linear
+      padding: 0.3em 0.45em
+      margin: 1.25em 0.3em
+      border-radius: 10px
+      width: 8px 
+      height: 12px
 
   h5
     padding: 0
     margin: 0.2em
 
-.wrapper_icon
-  background: $c-linear
-  padding: 0.3em 0.45em
-  margin: 1.25em 0.3em
-  border-radius: 10px
-  width: 8px 
-  height: 12px
+  
+
+
+  
+
+
 

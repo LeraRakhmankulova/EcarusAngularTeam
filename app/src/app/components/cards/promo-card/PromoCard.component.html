@@ -1,15 +1,15 @@
-<div class="card_product">
-  <div class="promo_card">
-    <div class="text_content">
-      <div class="flex_text">
-        <p>На вашем балансе </p>
-        <div class="union_wrapper">
-          <img src="/assets/images/union.svg" class="wrapper_icon" />
-          <h5>{{price}}</h5>
+<div class="cardPromo">
+  <div class="cardPromo__text">
+    <div class="cardPromo__text__flexGroup">
+      <p>На вашем балансе </p>
+      <div class="cardPromo__text__flexGroup__union">
+        <div class="cardPromo__text__flexGroup__union__icon">
+          <img src="/assets/images/union.svg" />
         </div>
+        <h5>{{price}}</h5>
       </div>
-      <p class="price_text">Вы можете обменять их на скидку {{price}} руб.</p>
     </div>
-    <app-modal-button text="Получить промокод" color="white" background="#07C88E" width='100%'></app-modal-button>
+    <p class="cardPromo__text__price">Вы можете обменять их на скидку {{price}} руб.</p>
   </div>
+  <app-modal-button text="Получить промокод" color="white" background="#07C88E" width='100%'></app-modal-button>
 </div>

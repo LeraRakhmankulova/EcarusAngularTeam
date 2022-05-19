@@ -1,86 +1,76 @@
 @import "mixins.sass" 
 
-@mixin desktop 
-    @media screen and (max-width: 1280px) 
-        .text_content
-            margin: 5em 0 
-        .promo_card
-            padding: 1em
-        .text_content
-            p
-                font-size: 12px
-
-@mixin laptop 
-    @media screen and (max-width: 992px) 
-        .text_content
-            margin: 4.5em 0 
-        .promo_card
-            padding: 0.6em 
-        .text_content
-            p
-                font-size: 10px 
-
-
-@mixin tablets 
-    @media screen and (max-width: 768px)
-        .text_content
-            margin: 8em 0 
-        .promo_card
-            padding: 1.5em 
-        .text_content
-            p
-                font-size: 14px 
-
-
-body
-    @include laptop
-    @include desktop
-    @include tablets
-
-.union_wrapper
-    display: flex
-    margin: -0.5em 0 0 0.2em
-
-.wrapper_icon
-    background: $c-linear
-    padding: 0.4em 0.45em
-    margin: 1.25em 0.3em
-    border-radius: 10px
-
-.promo_card
+.cardPromo
     padding: 1em
     margin: 0
     background: white
-    border: 1px solid rgba(62, 80, 114, 0.12)
-    box-shadow: 0px 12px 32px rgba(121, 121, 121, 0.12), 0px 4px 24px rgba(21, 45, 103, 0.12)
+    border: 1px solid $c-dblue
+    box-shadow: 0px 12px 32px $c-grey
     border-radius: 16px
 
-    button
-        padding: 1em
-        margin: 0
-        font-size: 14px
+    &__text
+        margin: 6.5em 0
+        text-align: center
+
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px  
+
+        &__flexGroup
+            text-align: center
+            justify-content: center
+            display: flex
+
+            &__union
+                display: flex
+                margin: -0.5em 0 0 0.2em
+
+                &__icon
+                    background: $c-linear
+                    padding: 0.4em 0.45em
+                    margin: 1.25em 0.3em
+                    border-radius: 10px
         
-.price_text
-    font-style: normal
-    font-weight: 400
-    font-size: 14px
-    line-height: 18px
-    color: black
-    margin: -10px 0 
-    padding: 0
+        &__price
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            color: black
+            margin: -10px 0 
+            padding: 0
+// @mixin desktop 
+//     @media screen and (max-width: 1280px) 
+//         .text_content
+//             margin: 5em 0 
+//         .promo_card
+//             padding: 1em
+//         .text_content
+//             p
+//                 font-size: 12px
 
-.text_content
-    margin: 6.5em 0
-    text-align: center
+// @mixin laptop 
+//     @media screen and (max-width: 992px) 
+//         .text_content
+//             margin: 4.5em 0 
+//         .promo_card
+//             padding: 0.6em 
+//         .text_content
+//             p
+//                 font-size: 10px 
 
-    p
-        font-style: normal
-        font-weight: 400
-        font-size: 14px
-        line-height: 18px
 
-.flex_text
-    text-align: center
-    justify-content: center
-    display: flex
-    
+// @mixin tablets 
+//     @media screen and (max-width: 768px)
+//         .text_content
+//             margin: 8em 0 
+//         .promo_card
+//             padding: 1.5em 
+//         .text_content
+//             p
+//                 font-size: 14px 
+
+
+
