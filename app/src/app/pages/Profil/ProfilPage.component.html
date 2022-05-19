@@ -1,43 +1,35 @@
-<div class="container">
+<div class="profil">
     <h2>Личный кабинет</h2>
-    <div class="person">
-        <div class="person_card">
-            <div class="avatar">
+    <div class="profil__card">
+        <div class="profil__card__content">
+            <div class="profil__card__content__avatar">
                 <img src="/assets/images/user_avatar.png" />
             </div>
             <h2>Алексей Петрович</h2>
             <p>+7 (917) 888 88 88</p>
             <p>ivanov@gmail.com</p>
-            <div class="edit_button">
+            <div class="profil__card__content__button">
                 <button>Редактировать</button>
             </div>
         </div>
 
-        <div class="person_promo_history">
-            <nav class="navbar">
+        <div class="profil__card__router">
+            <nav>
                 <ul class="nav_link">
                     <li>
-                        <a 
-                        routerLink="/profil/promocode" 
-                        [routerLinkActiveOptions]='{exact:true}'
-                        routerLinkActive='location_link'
-                        >
+                        <a routerLink="/profil/promocode" [routerLinkActiveOptions]='{exact:true}'
+                            routerLinkActive='location_link'>
                             Промокоды
                         </a>
                     </li>
                     <li>
-                        <a 
-                        routerLink="/profil/history" 
-                        routerLinkActive='location_link'
-                        >
+                        <a routerLink="/profil/history" routerLinkActive='location_link'>
                             История
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div class="router">
-                <router-outlet></router-outlet>
-            </div>
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>

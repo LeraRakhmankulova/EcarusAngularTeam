@@ -46,8 +46,8 @@
       <app-modal-button text="Сбросить фильтры" color="black" background="rgba(62, 80, 114, 0.08)" width='100%'>
       </app-modal-button>
     </div>
-    <div class="ecoMarket__mainContent_blocks">
-      <div class="card_product" (click)="openActionDialog()">
+    <div class="ecoMarket__mainContent__blocks">
+      <div class="ecoMarket__mainContent__blocks__card" (click)="openActionDialog()">
         <app-promo-card price='200'></app-promo-card>
       </div>
       <div *ngFor="let i of data_cards" class="card_product">
