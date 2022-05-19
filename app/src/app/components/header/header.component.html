@@ -1,60 +1,55 @@
 <header class="header">
-    <div class="header__content">
-      <div class="header__content__logo">
-        <a [routerLink]="['/']">
-          <img src="/assets/images/logo.svg" />
-        </a>
-      </div>
-      <!-- <div class="menu_button">
+  <div class="header__content">
+    <div class="header__content__logo">
+      <a [routerLink]="['/']">
+        <img src="/assets/images/logo.svg" />
+      </a>
+    </div>
+    <!-- <div class="menu_button">
         <div></div>
         <button>
           <img src="../../../assets/images/men.svg" /> енто меню для мобилки
         </button>
       </div> -->
-      <nav class="header__content__navbarLside">
-        <ul>
-          <li>
-            <a [routerLink]="['/']"
-            [routerLinkActiveOptions]='{exact:true}'
-              routerLinkActive='location_link'>
-              Главная
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/collection_points']"
-              routerLinkActive='location_link'>
-              Пункты сбора
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/eco_market']"
-            routerLinkActive='location_link'>
-              ЭкоМаркет
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/profil']"
-            routerLinkActive='location_link'>
+    <nav>
+      <ul>
+        <li>
+          <a [routerLink]="['/']" [routerLinkActiveOptions]='{exact:true}' routerLinkActive='location_link'>
+            Главная
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/collection_points']" routerLinkActive='location_link'>
+            Пункты сбора
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/eco_market']" routerLinkActive='location_link'>
+            ЭкоМаркет
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/profil']" routerLinkActive='location_link'>
             <!-- routerLinkActive='location_link'> -->
-              О сервисе
-            </a>
-          </li>
-        </ul>
-      </nav>
+            О сервисе
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      <nav class="header__content__navbarRside">
-        <ul>
-          <li>
-            <img src="/assets/images/point.svg" />
-            <p>Казань</p>
-          </li>
-          <li>
-            <div (click)="openActionDialog()">
-              <img src="/assets/images/in.svg" />
-              Войти
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="header__content__userInfo">
+      <ul>
+        <li>
+          <img src="/assets/images/point.svg" />
+          <p>Казань</p>
+        </li>
+        <li>
+          <div (click)="openActionDialog()" class="login">
+            <img src="/assets/images/in.svg" />
+            <p>Войти</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
