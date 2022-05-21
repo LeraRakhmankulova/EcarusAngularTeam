@@ -95,7 +95,3 @@ export function LocalStorage(autoSave: boolean = true, key?: string) {
   };
 }
 
-export class User {
-  constructor(public email: string) {
-  }
-}

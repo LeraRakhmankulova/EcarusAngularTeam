@@ -4,7 +4,7 @@ import {DialogService} from "@services/dialog.service";
 import {FormBuilder} from "@angular/forms";
 import {ToastService} from "@services/toast.service";
 import {AuthService} from "@services/auth.service";
-import {User} from "@utils/local-storage";
+import {SignModalComponent} from "@components/modal/sign-modal/sign-modal.component";
 
 @Component({
   selector: 'app-profil',
@@ -13,17 +13,23 @@ import {User} from "@utils/local-storage";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProfilComponent implements OnInit {
-  constructor(
-              private dialog: DialogService,
-              private fb: FormBuilder,
-              private toast: ToastService,
-              private authService: AuthService) { }
+  public user = {email: 'email', phone_number: 'phone_number'};
 
-  ngOnInit(): void {
+  constructor(
+    private dialog: DialogService,
+    private fb: FormBuilder,
+    private toast: ToastService,
+    private authService: AuthService) {
   }
+
   getProfile(): void {
     this.authService.getProfile().subscribe(res => {
       console.log(res)
-    });
+      this.user = {email: res.email, phone_number: res.phone_number};
+    })
+  }
+
+  ngOnInit(): void {
+    this.getProfile()
   }
 }
