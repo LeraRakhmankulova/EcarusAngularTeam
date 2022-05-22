@@ -40,6 +40,7 @@ import { ProfilComponent } from '@pages/profil/profilPage.component';
 import { HistoryCardComponent } from '@components/cards/history-card/history-card.component';
 import { MapCardComponent } from '@components/map-card/map-card.component';
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
+import {UserCardComponent} from "@components/cards/user-card/user-card.component";
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPro
     ProfilComponent,
     UserpromoCardComponent,
     HistoryCardComponent,
-    MapCardComponent
+    MapCardComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,

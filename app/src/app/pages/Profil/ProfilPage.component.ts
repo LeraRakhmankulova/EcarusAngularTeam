@@ -13,23 +13,17 @@ import {SignModalComponent} from "@components/modal/sign-modal/sign-modal.compon
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProfilComponent implements OnInit {
-  public user = {email: 'email', phone_number: 'phone_number'};
+  user: any;
 
   constructor(
-    private dialog: DialogService,
-    private fb: FormBuilder,
-    private toast: ToastService,
     private authService: AuthService) {
   }
 
-  getProfile(): void {
+  ngOnInit(): void {
     this.authService.getProfile().subscribe(res => {
-      console.log(res)
-      this.user = {email: res.email, phone_number: res.phone_number};
-    })
+      this.user = res;
+      // console.log(res);
+    });
   }
 
-  ngOnInit(): void {
-    this.getProfile()
-  }
 }

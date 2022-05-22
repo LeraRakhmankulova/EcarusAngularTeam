@@ -3,17 +3,10 @@
 
     <div class="profil__card">
 
-        <div class="profil__card__content">
-            <div class="profil__card__content__avatar">
-                <img src="/assets/images/user_avatar.png" alt="avatar"/>
-            </div>
-            <h2>Алексей Петрович</h2>
-            <p>{{user.phone_number}}</p>
-          <p>{{user.email}}</p>
-            <div class="profil__card__content__button">
-                <button>Редактировать</button>
-            </div>
-        </div>
+      <app-user-card
+        [user]='user'
+      >
+      </app-user-card>
 
         <div class="profil__card__router">
             <nav>
