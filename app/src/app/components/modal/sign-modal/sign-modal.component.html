@@ -27,8 +27,8 @@
       <span class="errors">Пароль должен содержать минимум 4 символа</span>
     </ng-container>
     <div class="button_wrapper">
-      <div class="button_wrapper_content" [routerLink]="['/profil']" routerLinkActive='location_link'>
-        <app-modal-button (click)="login();close(true)" text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
+      <div class="button_wrapper_content">
+        <app-modal-button (click)="login()" text='Войти' color='white' background='#07C88E' width='100%'></app-modal-button>
       </div>
       <div class="link_text_wrapper">
         <div>

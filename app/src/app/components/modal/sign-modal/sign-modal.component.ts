@@ -6,6 +6,7 @@ import {AuthService} from '../../../services/auth.service';
 import {DialogService} from "../../../services/dialog.service";
 import {RegisterModalComponent} from "../register-modal/register-modal.component";
 import {SignCompanyModalComponent} from "../sign-company-modal/sign-company-modal.component";
+import { Router } from '@angular/router';
 
 interface DialogData {
   name: string;
@@ -24,6 +25,7 @@ export class SignModalComponent implements OnInit {
     private dialogRef: DialogRef<SignModalComponent>,
     private dialog: DialogService,
     private fb: FormBuilder,
+    private route: Router,
     private toast: ToastService,
     private authService: AuthService,
     @Optional() @Inject(DIALOG_DATA) public data: DialogData,
@@ -34,8 +36,10 @@ export class SignModalComponent implements OnInit {
       role: 'USER'
     });
   }
-
   ngOnInit() {
+  }
+  close(resolve: boolean): void {
+    this.dialogRef.close(resolve);
   }
   login(): void {
     if (!this.Form.valid) {
@@ -46,12 +50,11 @@ export class SignModalComponent implements OnInit {
     this.authService.authorize(this.Form.value).subscribe(res => {
       this.toast.success('Добро пожаловать');
       this.authService.token = res.token;
+      this.dialogRef.close();
+      this.route.navigate(['/profil']);
     }, err => {
       console.log(err);
     })
-  }
-  close(resolve: boolean): void {
-    this.dialogRef.close(resolve);
   }
 
   openActionDialog() {
