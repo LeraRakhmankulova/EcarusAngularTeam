@@ -1,7 +1,7 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-service',
-  template: `<h1>This page about service!</h1>`,
+  template: `<h1>hi</h1>`,
 })
-export class ServiceComponent {}
+export class ServiceComponent { }

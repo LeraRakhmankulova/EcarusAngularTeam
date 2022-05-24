@@ -20,7 +20,7 @@ import { FooterComponent } from "@components/footer/footer.component.";
 import { MainComponent } from '@pages/main/main.component';
 import { BannerCardComponent } from '@components/cards/banner-card/banner-card.component';
 import { SwiperCardComponent } from '@components/cards/swiper-card/swiper-card.component';
-import { SwiperBannerComponent } from '@components/swiper-banner/swiper-banner.component';
+import { SwiperBannerComponent } from '@components/cards/swiper-banner/swiper-banner.component';
 import { EcoMarketComponent } from "@pages/ecoMarket/ecoMarket.component";
 import { PromoCardComponent } from "@components/cards/promo-card/promoCard.component";
 import { ModalButtonComponent } from "@components/ui/modal-button/button.component";
@@ -38,7 +38,7 @@ import { RegisterCompanyModalComponent } from "@components/modal/register-compan
 import { QRCodeModalComponent } from "@components/modal/qr-code-modal/qr-code-modal.component";
 import { ProfilComponent } from '@pages/profil/ProfilPage.component';
 import { HistoryCardComponent } from '@components/cards/history-card/history-card.component';
-import { MapCardComponent } from '@components/map-card/map-card.component';
+import { MapCardComponent } from '@components/cards/map-card/map-card.component';
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import {UserCardComponent} from "@components/cards/user-card/user-card.component";
 

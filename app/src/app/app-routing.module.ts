@@ -8,6 +8,7 @@ import { HistoryCardComponent } from '@components/cards/history-card/history-car
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import { ProfilComponent } from '@pages/profil/ProfilPage.component';
 import { AuthGuard } from '@guards/auth.guard';
+import { ServiceComponent } from '@pages/servicePage/servicePage';
 
 
 
@@ -29,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: 'about_service',
-    component: FooterComponent,
+    component: ServiceComponent,
     pathMatch: 'full'
   },
   {

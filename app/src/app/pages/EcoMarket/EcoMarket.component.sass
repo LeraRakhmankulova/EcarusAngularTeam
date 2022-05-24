@@ -10,7 +10,6 @@
     justify-content: space-between
     @include second-title
 
-
     ul
       padding-top: 1em
       display: flex
@@ -39,7 +38,7 @@
         color: white
 
   &__mainContent
-    margin: 0 1em
+    margin: 0 
     display: grid
     grid-template-columns: 3fr 9fr
     grid-template-areas: "search_block cards_block"
@@ -47,9 +46,10 @@
     &__blocks
       grid-area: cards_block
       display: flex
-      margin: 0 0 0 1.5em
+      padding: 0
+
+      justify-content: right
       flex-wrap: wrap
-      padding: 0 
 
       &__card
         padding: 0 0.5em 0.5em 0.5em 
@@ -82,3 +82,20 @@
   border-radius: 20px
   padding: 0 2em
   margin-bottom: 2em
+
+@media screen and (max-width: 795px)
+  .eco_market
+    @include zeroing-indents
+  .eco_market__mainContent__search
+    display: none
+  .eco_market__mainContent
+    display: block
+    width: 100%
+  .eco_market__mainContent__blocks
+    width: 100%
+    display: block
+  .eco_market__mainContent__blocks__card
+    width: 100%
+    padding: 1em
+  .eco_market__content
+    display: none
