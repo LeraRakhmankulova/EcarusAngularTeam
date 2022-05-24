@@ -17,17 +17,17 @@ import { LeafletModule } from "@asymmetrik/ngx-leaflet";
 
 import { HeaderComponent } from "@components/header/header.component";
 import { FooterComponent } from "@components/footer/footer.component.";
-import { MainComponent } from '@pages/main/main.component';
+import { MainComponent } from '@pages/main-page/main.component';
 import { BannerCardComponent } from '@components/cards/banner-card/banner-card.component';
 import { SwiperCardComponent } from '@components/cards/swiper-card/swiper-card.component';
-import { SwiperBannerComponent } from '@components/cards/swiper-banner/swiper-banner.component';
-import { EcoMarketComponent } from "@pages/ecoMarket/ecoMarket.component";
+import { SwiperBannerComponent } from '@components/swiper-banner/swiper-banner.component';
+import { EcoMarketComponent } from "@pages/eco-market-page/eco-market.component";
 import { PromoCardComponent } from "@components/cards/promo-card/promoCard.component";
 import { ModalButtonComponent } from "@components/ui/modal-button/button.component";
 import { CheckboxComponent } from "@components/ui/checkbox/checkbox.component";
 import { ProductCardComponent } from "@components/cards/product-card/product-card.component";
 import { MapComponent } from "@components/map/map.component";
-import { MapPageComponent } from "@pages/mapPage/mapPage.component";
+import { MapPageComponent } from "@pages/map-page/map.component";
 import { ModalContainerComponent } from "@components/modal/modal-container/modal-container.component";
 import { SignModalComponent } from "@components/modal/sign-modal/sign-modal.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -36,11 +36,11 @@ import { RegisterModalComponent } from "@components/modal/register-modal/registe
 import { SignCompanyModalComponent } from "@components/modal/sign-company-modal/sign-company-modal.component";
 import { RegisterCompanyModalComponent } from "@components/modal/register-company-modal/register-company-modal.component";
 import { QRCodeModalComponent } from "@components/modal/qr-code-modal/qr-code-modal.component";
-import { ProfilComponent } from '@pages/profil/ProfilPage.component';
 import { HistoryCardComponent } from '@components/cards/history-card/history-card.component';
 import { MapCardComponent } from '@components/cards/map-card/map-card.component';
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import {UserCardComponent} from "@components/cards/user-card/user-card.component";
+import {ProfileComponent } from '@pages/profile-page/profile.component';
 
 
 @NgModule({
@@ -66,11 +66,11 @@ import {UserCardComponent} from "@components/cards/user-card/user-card.component
     SignCompanyModalComponent,
     QRCodeModalComponent,
     InputComponent,
-    ProfilComponent,
     UserpromoCardComponent,
     HistoryCardComponent,
     MapCardComponent,
-    UserCardComponent
+    UserCardComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

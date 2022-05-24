@@ -1,10 +1,10 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PointsService } from 'src/app/services/points.service';
 
 @Component({
   selector: 'app-map-page',
-  templateUrl: './MapPage.component.html',
-  styleUrls: ['./MapPage.component.sass'],
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.sass'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MapPageComponent {

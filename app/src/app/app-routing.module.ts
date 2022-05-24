@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from "@pages/main/main.component";
-import { EcoMarketComponent } from "@pages/ecoMarket/ecoMarket.component";
-import { FooterComponent } from "@components/footer/footer.component.";
-import { MapPageComponent } from '@pages/mapPage/mapPage.component';
+import { MainComponent } from "@pages/main-page/main.component";
+import { EcoMarketComponent } from "@pages/eco-market-page/eco-market.component";
+import { MapPageComponent } from '@pages/map-page/map.component';
 import { HistoryCardComponent } from '@components/cards/history-card/history-card.component';
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
-import { ProfilComponent } from '@pages/profil/ProfilPage.component';
+import { ProfileComponent } from '@pages/profile-page/profile.component';
 import { AuthGuard } from '@guards/auth.guard';
-import { ServiceComponent } from '@pages/servicePage/servicePage';
+import { ServiceComponent } from '@pages/service-page/service';
 
 
 
@@ -34,8 +33,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'profil',
-    component: ProfilComponent,
+    path: 'profile',
+    component: ProfileComponent,
     // canActivate: [AuthGuard],
     // canActivateChild: [AuthGuard],
     children: [
