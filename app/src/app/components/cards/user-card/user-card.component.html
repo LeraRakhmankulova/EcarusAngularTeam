@@ -2,8 +2,8 @@
   <div class="profil__card__content__avatar">
     <img src="/assets/images/no_avatar.png" alt="avatar"/>
   </div>
-  <h2 *ngIf="user.firstname == null && user.lastname == null; else elsB">Имя Фамилия</h2>
-  <ng-template #elsB>
+  <h2 *ngIf="user.firstname == null && user.lastname == null; else default">Имя Фамилия</h2>
+  <ng-template #default>
     <h2>{{user.firstname}}</h2><h2> {{user.lastname}}</h2>
   </ng-template>
   <p>{{user.phone_number}}</p>

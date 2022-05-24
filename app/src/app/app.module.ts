@@ -41,6 +41,7 @@ import { MapCardComponent } from '@components/cards/map-card/map-card.component'
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import {UserCardComponent} from "@components/cards/user-card/user-card.component";
 import {ProfileComponent } from '@pages/profile-page/profile.component';
+import { MenuComponent } from './components/modal/menu-modal/menu.component';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import {ProfileComponent } from '@pages/profile-page/profile.component';
     HistoryCardComponent,
     MapCardComponent,
     UserCardComponent,
-    ProfileComponent
+    ProfileComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

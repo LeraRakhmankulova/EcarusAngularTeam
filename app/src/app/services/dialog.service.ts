@@ -16,7 +16,17 @@ export class DialogService {
 			containerComponent: ModalContainerComponent,
 		});
 	}
-
+	openMobileModal<T>(component: ComponentType<T>, config: DialogConfig = {}): DialogRef<ModalContainerComponent> {
+		config = {
+			panelClass: 'fullWidthDialog'
+		}
+		this.dialog.closeAll();
+		return this.dialog.openFromComponent(component, {
+			width: '100vh',
+			...config,
+			containerComponent: ModalContainerComponent,
+		});
+	}
 	openDialog<T>(component: ComponentType<T>, config: DialogConfig = {}): DialogRef<ModalContainerComponent> {
 		return this.dialog.openFromComponent(component, {
 			maxWidth: 'none',

@@ -8,6 +8,7 @@ import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPro
 import { ProfileComponent } from '@pages/profile-page/profile.component';
 import { AuthGuard } from '@guards/auth.guard';
 import { ServiceComponent } from '@pages/service-page/service';
+import { MenuComponent } from '@components/modal/menu-modal/menu.component';
 
 
 
@@ -28,8 +29,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'about_service',
+    path: 'collection_points',
     component: ServiceComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'test',
+    component: MenuComponent,
     pathMatch: 'full'
   },
   {

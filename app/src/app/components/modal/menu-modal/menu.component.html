@@ -1,0 +1,68 @@
+<div class="menu_modal">
+    <ng-container>
+        <div class='menu_modal__user'>
+            <img src='/assets/images/no_avatar.png' alt="avatar" />
+            <div class='modal__profile_info'>
+                <p *ngIf="user.email == null; else default">
+                    Имя Фамилия
+                </p>
+                <ng-template #default>
+                    <!-- <p>{{user.firstname}}</p>
+                    <p> {{user.lastname}}</p> -->
+                    <p>{{user.email}}</p>
+                  </ng-template>
+                <!-- <div class='modal__balance'>
+                    <img class='avatar' src='/assets/images/no_avatar.png'>
+                    <p class='balance'>
+                        0
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </ng-container>
+
+
+    <ul class='ul_links'>
+        <ng-template #nonAuth>
+            <li>
+                <button class='link'>
+                    Войти
+                </button>
+            </li>
+
+            <li>
+                <button class='link'>
+                    Регистрация
+                </button>
+            </li>
+        </ng-template>
+
+        <li>
+            <a class='link'
+                routerLink='/'>
+                Главная
+            </a>
+        </li>
+
+        <li>
+            <a class='link'
+                routerLink='/collection_points'>
+                Пункты сбора
+            </a>
+        </li>
+
+        <li>
+            <a class='link'
+                routerLink='/eco_market'>
+                ЭкоМаркет
+            </a>
+        </li>
+
+        <li>
+            <a class='link'
+                routerLink='/collection_points'>
+                О сервисе
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,4 +1,5 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import { MenuComponent } from '@components/modal/menu-modal/menu.component';
 import {DialogService} from "../../services/dialog.service";
 import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
 
@@ -30,5 +31,8 @@ export class HeaderComponent implements OnInit{
       console.log(dialogResult);
     });
   }
+  openMenu() {
+		this.dialog.openMobileModal(MenuComponent)
+	}
 
 }

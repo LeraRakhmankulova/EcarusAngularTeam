@@ -51,7 +51,7 @@ export class SignModalComponent implements OnInit {
       this.toast.success('Добро пожаловать');
       this.authService.token = res.token;
       this.dialogRef.close();
-      this.route.navigate(['/profil']);
+      this.route.navigate(['/profile']);
     }, err => {
       console.log(err);
     })
