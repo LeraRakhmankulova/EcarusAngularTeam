@@ -1,1 +1,20 @@
 @import "colors"
+
+@mixin button-hover
+    &:hover
+        transform: translateY(-3px)
+        box-shadow: 5px 5px 20px rgba(159, 157, 157, 0.171)
+
+@mixin main-title
+    h1 
+        font-size: calc(17px + 23 * (100vw / 1280))
+        padding: 0
+        margin: 0
+        font-weight: bold 
+
+@mixin second-title
+    h2
+        font-size: calc(15px + 22 * (100vw / 4000)) 
+        font-weight: bold
+        padding: 0
+        margin: 0

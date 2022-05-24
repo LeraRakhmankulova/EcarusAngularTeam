@@ -1,24 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from "./pages/main/main.component";
-import { EcoMarketComponent } from "./pages/ecoMarket/ecoMarket.component";
-import { FooterComponent } from "./components/footer/footer.component.";
-import { ProfilComponent } from './pages/profil/profilPage.component';
-import { MapPageComponent } from './pages/mapPage/mapPage.component';
-import { HistoryCardComponent } from './components/cards/history-card/history-card.component';
-import { UserpromoCardComponent } from './components/cards/userPromo-card/userPromo-card.component';
+import { MainComponent } from "@pages/main/main.component";
+import { EcoMarketComponent } from "@pages/ecoMarket/ecoMarket.component";
+import { FooterComponent } from "@components/footer/footer.component.";
+import { MapPageComponent } from '@pages/mapPage/mapPage.component';
+import { HistoryCardComponent } from '@components/cards/history-card/history-card.component';
+import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
+import { ProfilComponent } from '@pages/profil/ProfilPage.component';
+import { AuthGuard } from '@guards/auth.guard';
 
 
-const profileRoutes: Routes = [
-  {
-    path: 'promocode',
-    component: UserpromoCardComponent
-  },
-  {
-    path: 'history',
-    component: HistoryCardComponent
-  }
-]
 
 const routes: Routes = [
   {
@@ -44,7 +35,18 @@ const routes: Routes = [
   {
     path: 'profil',
     component: ProfilComponent,
-    children: profileRoutes
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+    children: [
+      {
+        path: 'promocode',
+        component: UserpromoCardComponent
+      },
+      {
+        path: 'history',
+        component: HistoryCardComponent
+      }
+    ]
   }
 ];
 

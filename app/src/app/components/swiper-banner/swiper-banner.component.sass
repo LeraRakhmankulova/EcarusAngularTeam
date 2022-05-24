@@ -31,6 +31,16 @@
 
 .slider_content
 	width: 100%
+	z-index: 1
 
 .customSwiper
 	padding: 0.5em 1em
+
+@media screen and (max-width: 795px)
+	.customSwiper
+		z-index: -2
+		padding: 0
+		margin: 0
+	.swiper-button-next,
+	.swiper-button-prev
+		display: none

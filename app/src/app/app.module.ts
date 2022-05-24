@@ -36,7 +36,7 @@ import { RegisterModalComponent } from "@components/modal/register-modal/registe
 import { SignCompanyModalComponent } from "@components/modal/sign-company-modal/sign-company-modal.component";
 import { RegisterCompanyModalComponent } from "@components/modal/register-company-modal/register-company-modal.component";
 import { QRCodeModalComponent } from "@components/modal/qr-code-modal/qr-code-modal.component";
-import { ProfilComponent } from '@pages/profil/profilPage.component';
+import { ProfilComponent } from '@pages/profil/ProfilPage.component';
 import { HistoryCardComponent } from '@components/cards/history-card/history-card.component';
 import { MapCardComponent } from '@components/map-card/map-card.component';
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
