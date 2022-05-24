@@ -5,8 +5,8 @@ import {QRCodeModalComponent} from "../../components/modal/qr-code-modal/qr-code
 
 @Component({
   selector: 'app-eco-market',
-  templateUrl: './EcoMarket.component.html',
-  styleUrls: ['./EcoMarket.component.sass', './scroll_custom.css'],
+  templateUrl: './ecoMarket.component.html',
+  styleUrls: ['./ecoMarket.component.sass', './scroll_custom.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 

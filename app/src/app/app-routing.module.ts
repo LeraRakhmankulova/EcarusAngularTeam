@@ -35,8 +35,8 @@ const routes: Routes = [
   {
     path: 'profil',
     component: ProfilComponent,
-    canActivate: [AuthGuard],
-    canActivateChild: [AuthGuard],
+    // canActivate: [AuthGuard],
+    // canActivateChild: [AuthGuard],
     children: [
       {
         path: 'promocode',
