@@ -19,7 +19,6 @@ export class MenuComponent implements OnInit {
       this.user = res;
     });
   }
-  
   close(resolve: boolean): void {
     this.dialogRef.close(resolve);
   }
