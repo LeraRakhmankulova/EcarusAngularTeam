@@ -7,8 +7,8 @@ import { HistoryCardComponent } from '@components/cards/history-card/history-car
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import { ProfileComponent } from '@pages/profile-page/profile.component';
 import { AuthGuard } from '@guards/auth.guard';
-import { ServiceComponent } from '@pages/service-page/service';
 import { MenuComponent } from '@components/modal/menu-modal/menu.component';
+import { ServiceComponent } from '@pages/service-page/service.component';
 
 
 
@@ -29,13 +29,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'collection_points',
+    path: 'about_service',
     component: ServiceComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: 'test',
-    component: MenuComponent,
     pathMatch: 'full'
   },
   {
