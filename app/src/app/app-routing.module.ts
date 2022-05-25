@@ -9,6 +9,7 @@ import { ProfileComponent } from '@pages/profile-page/profile.component';
 import { AuthGuard } from '@guards/auth.guard';
 import { MenuComponent } from '@components/modal/menu-modal/menu.component';
 import { ServiceComponent } from '@pages/service-page/service.component';
+import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-card.component';
 
 
 
@@ -30,7 +31,7 @@ const routes: Routes = [
   },
   {
     path: 'about_service',
-    component: ServiceComponent,
+    component: FullMapCardComponent,
     pathMatch: 'full'
   },
   {
