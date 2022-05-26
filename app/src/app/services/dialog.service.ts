@@ -1,6 +1,6 @@
 import { Injectable, TemplateRef } from '@angular/core';
 import { Dialog, DialogConfig, DialogRef } from '@angular/cdk-experimental/dialog';
-import { ModalContainerComponent } from '../components/modal/modal-container/modal-container.component';
+import { ModalContainerComponent } from '@components/modal/modal-container/modal-container.component';
 import { ComponentType } from '@angular/cdk/overlay';
 
 @Injectable({
@@ -17,7 +17,7 @@ export class DialogService {
 		});
 	}
 	openMobileModal<T>(component: ComponentType<T>, config: DialogConfig = {}): DialogRef<ModalContainerComponent> {
-	
+
 		return this.dialog.openFromComponent(component, {
 			maxWidth: 'none',
 			...config,

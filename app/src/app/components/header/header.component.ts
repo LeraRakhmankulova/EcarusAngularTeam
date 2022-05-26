@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {MenuComponent} from '@components/modal/menu-modal/menu.component';
 import {DialogService} from "@services/dialog.service";
 import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
@@ -13,12 +13,27 @@ import {Router} from '@angular/router';
 })
 
 export class HeaderComponent implements OnInit {
+  @Input() user: {
+    email: string,
+    phone_number: string,
+    firstname: string,
+    lastname: string
+  };
   constructor(private dialog: DialogService,
               public authService: AuthService,
               private route: Router) {
+    this.user = {
+      email: "",
+      phone_number: "",
+      firstname: "",
+      lastname: ""
+    }
   }
 
   ngOnInit(): void {
+    this.authService.getProfile().subscribe(res => {
+      this.user = res;
+    });
   }
 
   openSimpleDialog() {
