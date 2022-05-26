@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { OverlayModule } from "@angular/cdk/overlay";
 import { PortalModule } from "@angular/cdk/portal";
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { AuthInterceptorService } from './services/auth-interceptor.service';
-import { ErrorInterceptorService } from './services/error-interceptor.service';
-import { UrlInterceptorService } from './services/url-interceptor.service';
+import { AuthInterceptorService } from '@services/auth-interceptor.service';
+import { ErrorInterceptorService } from '@services/error-interceptor.service';
+import { UrlInterceptorService } from '@services/url-interceptor.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ToastContainerModule, ToastrModule } from 'ngx-toastr';
@@ -41,9 +41,9 @@ import { MapCardComponent } from '@components/cards/map-card/map-card.component'
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import {UserCardComponent} from "@components/cards/user-card/user-card.component";
 import {ProfileComponent } from '@pages/profile-page/profile.component';
-import { MenuComponent } from './components/modal/menu-modal/menu.component';
+import { MenuComponent } from '@components/modal/menu-modal/menu.component';
 import { ServiceComponent } from '@pages/service-page/service.component';
-import { FullMapCardComponent } from './components/cards/full-map-card/full-map-card.component';
+import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-card.component';
 
 
 @NgModule({

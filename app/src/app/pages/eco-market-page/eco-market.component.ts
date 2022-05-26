@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {DataItems} from '../../mocks/productMock'
-import {DialogService} from "../../services/dialog.service";
-import {QRCodeModalComponent} from "../../components/modal/qr-code-modal/qr-code-modal.component";
+import {DialogService} from "@services/dialog.service";
+import {QRCodeModalComponent} from "@components/modal/qr-code-modal/qr-code-modal.component";
 
 @Component({
   selector: 'app-eco-market',

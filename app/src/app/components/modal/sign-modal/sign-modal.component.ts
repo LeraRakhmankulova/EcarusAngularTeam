@@ -1,9 +1,9 @@
 import {ChangeDetectionStrategy, Component, Inject, OnInit, Optional} from '@angular/core';
 import {DIALOG_DATA, DialogRef} from '@angular/cdk-experimental/dialog';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {ToastService} from '../../../services/toast.service';
-import {AuthService} from '../../../services/auth.service';
-import {DialogService} from "../../../services/dialog.service";
+import {ToastService} from '@services/toast.service';
+import {AuthService} from '@services/auth.service';
+import {DialogService} from "@services/dialog.service";
 import {RegisterModalComponent} from "../register-modal/register-modal.component";
 import {SignCompanyModalComponent} from "../sign-company-modal/sign-company-modal.component";
 import { Router } from '@angular/router';

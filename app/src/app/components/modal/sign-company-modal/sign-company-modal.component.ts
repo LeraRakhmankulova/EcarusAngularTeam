@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, Inject, OnInit, Optional} from '@angular/core';
 import {DIALOG_DATA, DialogRef} from '@angular/cdk-experimental/dialog';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {DialogService} from "../../../services/dialog.service";
+import {DialogService} from "@services/dialog.service";
 import {RegisterCompanyModalComponent} from "../register-company-modal/register-company-modal.component";
 
 interface DialogData {
