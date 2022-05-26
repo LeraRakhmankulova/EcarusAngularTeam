@@ -1,55 +1,61 @@
 <div class="menu_modal">
-    <ng-container>
-        <div class='menu_modal__user'>
-            <img src='/assets/images/no_avatar.png' alt="avatar" />
-            <div class='modal__profile_info'>
-                <p *ngIf="user.email == null; else default">
-                    Имя Фамилия
-                </p>
-                <ng-template #default>
+
+    <div class='menu_modal__user'>
+        <ng-container *ngIf='authService.isAuthorized; else default'>
+            <div class='menu_modal__user__content'>
+                <img src='/assets/images/no_avatar.png' alt="avatar" />
+                <div class='menu_modal__user__content__info'>
                     <p>{{user.email}}</p>
-                </ng-template>
+                    <div class="menu_modal__user__content__info__name">
+                    <div class="menu_modal__user__content__info__icon"></div>
+                    <h4>1000</h4>
+                </div>
+                </div>
             </div>
-        </div>
-    </ng-container>
+        </ng-container>
+
+        <ng-template #default>
+            <div></div>
+        </ng-template>
+        <button class="menu_modal__user__button" (click)="close(true)"></button>
+    </div>
+
     <ul class='menu_modal__links'>
         <li>
-            <a [routerLink]="['/']" 
-                [routerLinkActiveOptions]='{exact:true}' 
-                routerLinkActive='location_link'
+            <a [routerLink]="['/']" [routerLinkActiveOptions]='{exact:true}' routerLinkActive='location_link'
                 (click)="close(true)">
                 Главная
             </a>
         </li>
 
         <li>
-            <a [routerLink]="['/collection_points']" 
-                routerLinkActive='location_link'
-                (click)="close(true)">
+            <a [routerLink]="['/collection_points']" routerLinkActive='location_link' (click)="close(true)">
                 Пункты сбора
             </a>
         </li>
 
         <li>
-            <a [routerLink]="['/eco_market']" 
-                routerLinkActive='location_link'
-                (click)="close(true)">
+            <a [routerLink]="['/eco_market']" routerLinkActive='location_link' (click)="close(true)">
                 ЭкоМаркет
             </a>
         </li>
 
         <li>
-            <a [routerLink]="['/about_service']" 
-                routerLinkActive='location_link'
-                (click)="close(true)">
+            <a [routerLink]="['/about_service']" routerLinkActive='location_link' (click)="close(true)">
                 О сервисе
             </a>
         </li>
         <li>
-            <a [routerLink]="['/']" 
-                (click)="close(true);">
-                Выйти
-            </a>
+            <ng-container *ngIf='authService.isAuthorized; else login'>
+                <a [routerLink]="['/']" (click)="close(true);authService.deleteInStorage()">
+                    Выйти
+                </a>
+            </ng-container>
+            <ng-template #login>
+                <a [routerLink]="['/']" (click)="close(true);openActionDialog()">
+                    Войти
+                </a>
+            </ng-template>
         </li>
     </ul>
 </div>

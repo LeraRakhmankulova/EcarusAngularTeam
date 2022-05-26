@@ -1,17 +1,45 @@
 @import "mixins.sass"
 
 .menu_modal
+    // display: none
     width: 90vw
     height: 100vh
+   
     &__user
         display: flex
+        justify-content: space-between
         align-items: center
-        padding: 48px 0
+        padding: 40px 0
         img
             width: 64px
             height: 64px
             margin-right: 12px
             border-radius: 50%
+        &__content
+            width: 100%
+            display: flex
+            &__info
+                font-size: 20px
+                &__name
+                    padding: 0.5em
+                    font-size: 16px
+                    display: flex
+                &__icon
+                    margin: 0 0.2em
+                    background: white url("/assets/images/icon.svg") no-repeat 50%
+                    width: 20px
+                    height: 20px
+
+
+        &__button
+            background: white url("/assets/images/out.svg") no-repeat 50%
+            margin: 0 1em 2em 0
+            border: none
+            cursor: pointer
+            width: 20px
+            height: 20px
+
+        
     &__links
         list-style-type: none
         font-weight: 500
@@ -30,4 +58,5 @@
 
 .location_link 
     font-weight: bold 
+
 
