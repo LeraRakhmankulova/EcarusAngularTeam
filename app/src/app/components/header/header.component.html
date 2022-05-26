@@ -29,21 +29,46 @@
         </li>
       </ul>
     </nav>
-
-    <nav class="header__content__userInfo">
-      <ul>
-        <li>
-          <img src="/assets/images/point.svg" alt="point"/>
-          <p>Казань</p>
-        </li>
-        <li>
-          <div (click)="openActionDialog()" class="login">
-            <img src="/assets/images/in.svg" alt="login"/>
-            <p>Войти</p>
-          </div>
-        </li>
-      </ul>
-    </nav>
+    <ng-container *ngIf='!authService.isAuthorized; else other'>
+      <nav class="header__content__userInfo">
+        <ul>
+          <li>
+            <img src="/assets/images/point.svg" alt="point"/>
+            <p>Казань</p>
+          </li>
+          <li>
+            <div (click)="openActionDialog()" class="login">
+              <img src="/assets/images/in.svg" alt="login"/>
+              <p>Войти</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </ng-container>
+    <ng-template #other>
+      <nav class="header__content__userInfo">
+        <ul>
+          <li>
+            <img src="/assets/images/point.svg" alt="point"/>
+            <p>Казань</p>
+          </li>
+          <li>
+            <img src="/assets/images/union.svg" alt="E"/>
+            <p>1000</p>
+          </li>
+          <li>
+            <div (click)="openProfile()" class="login">
+              <img src="/assets/images/no_avatar.png" alt="avatar"/>
+            </div>
+          </li>
+          <li>
+            <div (click)="authService.deleteInStorage();closeProfile()" class="login">
+              <p>Выйти</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </ng-template>
   </div>
   <div class="menu">
     <button (click)='openMenu()'></button>

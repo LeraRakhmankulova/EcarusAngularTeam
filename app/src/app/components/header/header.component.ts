@@ -1,7 +1,9 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import { MenuComponent } from '@components/modal/menu-modal/menu.component';
-import {DialogService} from "../../services/dialog.service";
+import {MenuComponent} from '@components/modal/menu-modal/menu.component';
+import {DialogService} from "@services/dialog.service";
 import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
+import {AuthService} from '@services/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +12,12 @@ import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class HeaderComponent implements OnInit{
-  constructor(private dialog: DialogService) {
+export class HeaderComponent implements OnInit {
+  constructor(private dialog: DialogService,
+              public authService: AuthService,
+              private route: Router) {
   }
+
   ngOnInit(): void {
   }
 
@@ -31,8 +36,15 @@ export class HeaderComponent implements OnInit{
       console.log(dialogResult);
     });
   }
+
+  openProfile() {
+    this.route.navigate(['/profile'])
+  }
+  closeProfile(){
+    this.route.navigate(['/'])
+  }
   openMenu() {
-		this.dialog.openMobileModal(MenuComponent)
-	}
+    this.dialog.openMobileModal(MenuComponent)
+  }
 
 }

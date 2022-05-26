@@ -1,30 +1,30 @@
 <div class="profil">
-    <h2>Личный кабинет</h2>
+  <h2>Личный кабинет</h2>
 
-    <div class="profil__card">
+  <div class="profil__card">
 
-      <app-user-card
-        [user]='user'
-      >
-      </app-user-card>
+    <app-user-card
+      [user]='user'
+    >
+    </app-user-card>
 
-        <div class="profil__card__router">
-            <nav>
-                <ul>
-                    <li>
-                        <a routerLink="/profil/promocode" [routerLinkActiveOptions]='{exact:true}'
-                            routerLinkActive='location_link'>
-                            Промокоды
-                        </a>
-                    </li>
-                    <li>
-                        <a routerLink="/profil/history" routerLinkActive='location_link'>
-                            История
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <router-outlet></router-outlet>
-        </div>
+    <div class="profil__card__router">
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="/profil/promocode" [routerLinkActiveOptions]='{exact:true}'
+               routerLinkActive='location_link'>
+              Промокоды
+            </a>
+          </li>
+          <li>
+            <a routerLink="/profil/history" routerLinkActive='location_link'>
+              История
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <router-outlet></router-outlet>
     </div>
+  </div>
 </div>
