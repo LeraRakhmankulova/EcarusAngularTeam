@@ -2,16 +2,18 @@
 
     <div class='menu_modal__user'>
         <ng-container *ngIf='authService.isAuthorized; else default'>
-            <div class='menu_modal__user__content'>
-                <img src='/assets/images/no_avatar.png' alt="avatar" />
-                <div class='menu_modal__user__content__info'>
-                    <p>{{user.email}}</p>
-                    <div class="menu_modal__user__content__info__name">
-                    <div class="menu_modal__user__content__info__icon"></div>
-                    <h4>1000</h4>
+            <a [routerLink]="['/profile']" (click)="close(true)">
+                <div class='menu_modal__user__content'>
+                    <img src='/assets/images/no_avatar.png' alt="avatar" />
+                    <div class='menu_modal__user__content__info'>
+                        <p>{{user.email}}</p>
+                        <div class="menu_modal__user__content__info__name">
+                            <div class="menu_modal__user__content__info__icon"></div>
+                            <h4>1000</h4>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
+            </a>
         </ng-container>
 
         <ng-template #default>
