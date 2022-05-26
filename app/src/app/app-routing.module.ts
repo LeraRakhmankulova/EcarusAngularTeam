@@ -7,11 +7,12 @@ import { HistoryCardComponent } from '@components/cards/history-card/history-car
 import { UserpromoCardComponent } from '@components/cards/userPromo-card/userPromo-card.component';
 import { ProfileComponent } from '@pages/profile-page/profile.component';
 import { AuthGuard } from '@guards/auth.guard';
-import { MenuComponent } from '@components/modal/menu-modal/menu.component';
-import { ServiceComponent } from '@pages/service-page/service.component';
 import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-card.component';
 
-
+const childrenRoutes: Routes = [
+	{ path: 'promocode', component: UserpromoCardComponent },
+	{ path: 'history', component: HistoryCardComponent }
+]
 
 const routes: Routes = [
   {
@@ -37,18 +38,7 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-    // canActivate: [AuthGuard],
-    // canActivateChild: [AuthGuard],
-    children: [
-      {
-        path: 'promocode',
-        component: UserpromoCardComponent
-      },
-      {
-        path: 'history',
-        component: HistoryCardComponent
-      }
-    ]
+    children: childrenRoutes
   }
 ];
 

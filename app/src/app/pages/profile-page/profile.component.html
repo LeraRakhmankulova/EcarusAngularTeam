@@ -1,24 +1,18 @@
 <div class="profil">
   <h1>Личный кабинет</h1>
-
   <div class="profil__card">
-
-    <app-user-card
-      [user]='user'
-    >
-    </app-user-card>
-
+    <app-user-card [user]='user'></app-user-card>
     <div class="profil__card__router">
       <nav>
         <ul>
           <li>
-            <a routerLink="/profil/promocode" [routerLinkActiveOptions]='{exact:true}'
+            <a routerLink="/profile/promocode" [routerLinkActiveOptions]='{exact:true}'
                routerLinkActive='location_link'>
               Промокоды
             </a>
           </li>
           <li>
-            <a routerLink="/profil/history" routerLinkActive='location_link'>
+            <a routerLink="/profile/history" routerLinkActive='location_link'>
               История
             </a>
           </li>

@@ -1,29 +1,37 @@
 @import "mixins.sass"
 
-.cardPromo
+.card_promo
   border-top: 0.7px solid $c-grey
   border-bottom: 0.7px solid $c-grey
   padding: 1.3em 0
   display: grid
   grid-template-rows: 1fr
-  grid-template-columns: 2fr 6fr 4fr
+  grid-template-columns: 3fr 7fr 3fr
   grid-template-areas: "card info button"
 
   &__image
+    position: relative
     grid-area: card
+    width: 100%
+    color: white
+    margin: auto 0
+    img
+      width: 100%
 
   &__info
     grid-area: info
     padding: 0 1.5em
+    p
+      padding: 4px 0
 
     &--grin
       color: $c-primary
 
-    &__date
+    &--black
       padding-bottom: 0.5em
 
-    &--black
-      color: black
+    &--grey
+      color: $c-dgrey
       font-weight: 500
 
   &__button
@@ -31,6 +39,7 @@
     padding: 0 0.5em
 
     button
+      cursor: pointer
       justify-content: center
       align-items: center
       background: $c-light
@@ -38,6 +47,32 @@
       border: none
       width: 100%
       padding: 0.7em
+.money
+  position: absolute
+  width: 100%
+  height: 100%
+  align-items: center
+  justify-content: center
+  font-weight: bold
+  font-size: 34px
+  display: flex
+  top: 0
 
-
+@media screen and (max-width: 795px)
+  .card_promo
+    display: flex
+    flex-wrap: wrap
+    padding: 1em
+  .card_promo__info
+    padding: 0
+  .card_promo__info--black
+    margin-bottom: 16px
+  .card_promo__button
+    padding: 0
+    margin: 0.7em 0
+    width: 100%
+  .card_promo__image
+    width: 100%
+    img
+      width: 100%
 

@@ -24,6 +24,7 @@
     &--list
       list-style-type: disc
       padding-bottom: 1em
+      flex-wrap: wrap
 
       ul
         display: flex
@@ -31,6 +32,9 @@
 
         .list_element
           margin-right: 30px
+
+          span
+            white-space: nowrap
 
           &::marker
             color: rgba(62, 80, 114, 0.24)
@@ -49,3 +53,10 @@
 
     span
       font-weight: bold
+@media screen and (max-width: 795px)
+  .card
+    display: flex
+    flex-wrap: wrap
+    &__price
+      padding: 0.5em 0
+      
