@@ -98,6 +98,25 @@
     cursor: pointer
     padding: 0em 1.5em
     margin-top: 0.5em
+.header__content__userAuth
+  .icon
+    @include E-icon
+  ul
+    display: flex
+
+    li, .login
+      cursor: pointer
+      display: flex
+      padding: 0 3%
+      img
+        height: 20px
+        width: 20px
+        border-radius: 50%
+      p
+        padding: 0 0.5em
+        margin: 0
+        font-weight: 400
+        font-size: calc(5px + 22 * (100vw / 4000))
 
 @media screen and (max-width: 795px)
   .header
@@ -110,5 +129,6 @@
     display: none
   .menu
     display: contents
+  .header__content__userAuth
 
 

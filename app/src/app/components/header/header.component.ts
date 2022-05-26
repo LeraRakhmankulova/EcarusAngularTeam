@@ -13,22 +13,10 @@ import {Router} from '@angular/router';
 })
 
 export class HeaderComponent implements OnInit {
-  @Input() user: {
-    email: string,
-    phone_number: string,
-    firstname: string,
-    lastname: string
-  };
+  user: any;
   constructor(private dialog: DialogService,
               public authService: AuthService,
-              private route: Router) {
-    this.user = {
-      email: "",
-      phone_number: "",
-      firstname: "",
-      lastname: ""
-    }
-  }
+              private route: Router) {}
 
   ngOnInit(): void {
     this.authService.getProfile().subscribe(res => {
