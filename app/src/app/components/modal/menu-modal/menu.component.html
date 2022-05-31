@@ -1,5 +1,4 @@
 <div class="menu_modal">
-
     <div class='menu_modal__user'>
         <ng-container *ngIf='authService.isAuthorized; else default'>
             <a [routerLink]="['/profile']" (click)="close(true)">

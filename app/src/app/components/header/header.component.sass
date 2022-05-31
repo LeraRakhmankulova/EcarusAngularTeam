@@ -123,12 +123,24 @@
     padding: 0.8em 0
     width: 100%
     display: flex
-  .header__content__userInfo
-    display: none
-  .header__navbar
-    display: none
+    &__content__userInfo
+      display: none
+    &__navbar
+      display: none
+    &__content__userAuth
+      width: 120%
+      ul
+        justify-content: right
+        text-align: right
+      &__place
+        display: none !important
+      &__logout
+        display: none !important
+      .user_mail
+        display: none
+      
   .menu
     display: contents
-  .header__content__userAuth
+    
 
 

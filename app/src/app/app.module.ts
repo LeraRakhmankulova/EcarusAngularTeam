@@ -44,6 +44,7 @@ import {ProfileComponent } from '@pages/profile-page/profile.component';
 import { MenuComponent } from '@components/modal/menu-modal/menu.component';
 import { ServiceComponent } from '@pages/service-page/service.component';
 import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-card.component';
+import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-c
     ProfileComponent,
     MenuComponent,
     ServiceComponent,
-    FullMapCardComponent
+    FullMapCardComponent,
+    BottomSheetComponent
   ],
   imports: [
     BrowserModule,
