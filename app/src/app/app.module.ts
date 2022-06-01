@@ -48,6 +48,7 @@ import { FiltersComponent } from '@components/modal/filters-modal/filters.compon
 import { BottomSheetComponent } from '@components/modal/bottom-sheet/bottom-sheet.component';
 import { MaterialsComponent } from '@components/modal/materials-modal/materials.component';
 import { RecyclingComponent } from '@components/modal/recycling-modal/recycling.component';
+import { SideBarComponent } from '@components/modal/side-bar-modal/side-bar.component';
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import { RecyclingComponent } from '@components/modal/recycling-modal/recycling.
     BottomSheetComponent,
     MaterialsComponent,
     RecyclingComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,

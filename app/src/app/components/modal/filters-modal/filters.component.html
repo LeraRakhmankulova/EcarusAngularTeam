@@ -1,6 +1,6 @@
 <div class="filters-menu">
     <div class="filters-menu__button">
-        <button></button>
+        <button (click)="close(true)"></button>
     </div>
     <div class="filters-menu__content">
         <button>По популярности</button>
@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="filters-menu__buttons">
-        <button class="apply">Применить</button>
-        <button class="reset">Сбросить фильтры</button>
+        <button class="apply" (click)="close(true)">Применить</button>
+        <button class="reset"(click)="close(true)">Сбросить фильтры</button>
     </div>
 </div>

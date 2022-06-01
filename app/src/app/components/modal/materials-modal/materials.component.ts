@@ -1,3 +1,4 @@
+import { DialogRef } from '@angular/cdk-experimental/dialog';
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
@@ -13,7 +14,7 @@ export class MaterialsComponent implements OnInit {
   @Input() allTp: Array<any>;
   @Input() materials: Array<any>;
 
-  constructor() { 
+  constructor(private dialogRef: DialogRef<MaterialsComponent>) { 
     this.allBr = [
       {title: "Выбрать все", checked: false}
     ];
@@ -42,4 +43,7 @@ export class MaterialsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  close(resolve: boolean): void {
+    this.dialogRef.close(resolve);
+  }
 }

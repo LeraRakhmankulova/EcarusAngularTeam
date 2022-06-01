@@ -3,6 +3,7 @@ import { Dialog, DialogConfig, DialogRef } from '@angular/cdk-experimental/dialo
 import { ModalContainerComponent } from '@components/modal/modal-container/modal-container.component';
 import { ComponentType } from '@angular/cdk/overlay';
 import { BottomSheetComponent } from '@components/modal/bottom-sheet/bottom-sheet.component';
+import { SideBarComponent } from '@components/modal/side-bar-modal/side-bar.component';
 
 @Injectable({
   providedIn: 'root'
@@ -17,11 +18,11 @@ export class DialogService {
 			containerComponent: ModalContainerComponent,
 		});
 	}
-	openMobileModal<T>(component: ComponentType<T>, config: DialogConfig = {}): DialogRef<ModalContainerComponent> {
+	openMobileModal<T>(component: ComponentType<T>, config: DialogConfig = {}): DialogRef<SideBarComponent> {
 		return this.dialog.openFromComponent(component, {
 			maxWidth: 'none',
 			...config,
-			containerComponent: ModalContainerComponent,
+			containerComponent: SideBarComponent,
 		});
 	}
 	openDialog<T>(component: ComponentType<T>, config: DialogConfig = {}): DialogRef<ModalContainerComponent> {

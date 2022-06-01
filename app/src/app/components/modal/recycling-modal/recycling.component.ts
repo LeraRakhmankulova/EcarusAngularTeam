@@ -1,3 +1,4 @@
+import { DialogRef } from '@angular/cdk-experimental/dialog';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
@@ -8,9 +9,13 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class RecyclingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogRef: DialogRef<RecyclingComponent>) { }
 
   ngOnInit(): void {
+  }
+
+  close(resolve: boolean): void {
+    this.dialogRef.close(resolve);
   }
 
 }

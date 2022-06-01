@@ -49,5 +49,4 @@ export class HeaderComponent implements OnInit {
   openMenu() {
     this.dialog.openMobileModal(MenuComponent)
   }
-
 }
