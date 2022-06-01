@@ -1,0 +1,12 @@
+.filters-menu__filters{
+    max-height: 480px;
+    overflow-y: scroll;
+    grid-area: search_block;
+    padding: 1em;
+    border: none;
+    border-radius: 16px;
+}
+
+.filters-menu__filters::-webkit-scrollbar {width: 5px; padding: 2em;}
+.filters-menu__filters::-webkit-scrollbar-thumb {border-radius: 10px;background: #f0f2f5;}
+.filters-menu__filters:hover::-webkit-scrollbar-thumb {background: #7e7f81;}

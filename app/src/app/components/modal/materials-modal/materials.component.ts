@@ -4,7 +4,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
 @Component({
   selector: 'app-materials',
   templateUrl: './materials.component.html',
-  styleUrls: ['./materials.component.sass'],
+  styleUrls: ['./materials.component.sass', 'custom_scroll.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MaterialsComponent implements OnInit {
