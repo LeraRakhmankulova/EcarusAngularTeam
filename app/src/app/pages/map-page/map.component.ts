@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MaterialsComponent } from '@components/modal/materials-modal/materials.component';
 import { DialogService } from '@services/dialog.service';
 import { PointsService } from 'src/app/services/points.service';
 
@@ -18,5 +19,8 @@ export class MapPageComponent {
 
   onChange(count: number) {
     this.selected = count;
+  }
+  openBottomSheet(){
+    this.dialog.openBottomSheet(MaterialsComponent, {}); 
   }
 }

@@ -16,9 +16,7 @@ export class FiltersComponent implements OnInit {
   @Input() allBr: Array<any>;
 
 
-  constructor(
-    private dialogRef: DialogRef<FiltersComponent>
-  ) { 
+  constructor(private dialogRef: DialogRef<FiltersComponent>) { 
     this.gender = [
       {title: "Мужской", checked: false},
       {title: "Женский", checked: false},

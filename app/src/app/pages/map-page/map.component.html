@@ -2,15 +2,12 @@
     <app-map></app-map>
     <div class="map_content__upperBlock">
         <div class="map_content__upperBlock__container">
-
             <div class="map_content__upperBlock__container__search">
                 <input placeholder='Поиск' />
             </div>
-
             <div class="map_content__upperBlock__container__filter">
-                <button></button>
+                <button (click)="openBottomSheet()"></button>
             </div>
-
             <div class="map_content__upperBlock__container__select">
                 <select>
                     <option value="" disabled selected>Выбрано 3 магазина</option>
@@ -21,7 +18,6 @@
                     <option>Nike</option>
                     <option>Reebok</option>
                 </select>
-
                 <select class="map_content__upperBlock__container__select--grey">
                     <option value="" disabled selected>Материалы</option>
                     <option>Пункт 1</option>

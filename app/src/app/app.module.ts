@@ -44,8 +44,9 @@ import {ProfileComponent } from '@pages/profile-page/profile.component';
 import { MenuComponent } from '@components/modal/menu-modal/menu.component';
 import { ServiceComponent } from '@pages/service-page/service.component';
 import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-card.component';
-import { FiltersComponent } from './components/modal/filters-modal/filters.component';
-import { BottomSheetComponent } from './components/modal/bottom-sheet/bottom-sheet.component';
+import { FiltersComponent } from '@components/modal/filters-modal/filters.component';
+import { BottomSheetComponent } from '@components/modal/bottom-sheet/bottom-sheet.component';
+import { MaterialsComponent } from '@components/modal/materials-modal/materials.component';
 
 
 @NgModule({
@@ -81,6 +82,7 @@ import { BottomSheetComponent } from './components/modal/bottom-sheet/bottom-she
     FullMapCardComponent,
     FiltersComponent,
     BottomSheetComponent,
+    MaterialsComponent,
   ],
   imports: [
     BrowserModule,
