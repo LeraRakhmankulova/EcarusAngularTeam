@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BottomSheetComponent } from '@components/bottom-sheet/bottom-sheet.component';
 import { DialogService } from '@services/dialog.service';
 import { PointsService } from 'src/app/services/points.service';
 
@@ -19,8 +18,5 @@ export class MapPageComponent {
 
   onChange(count: number) {
     this.selected = count;
-  }
-  openFilter() {
-    this.dialog.openMobileModal(BottomSheetComponent)
   }
 }

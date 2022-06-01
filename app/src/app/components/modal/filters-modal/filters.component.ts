@@ -1,27 +1,24 @@
-import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {DataItems} from '../../mocks/productMock'
-import {DialogService} from "@services/dialog.service";
-import {QRCodeModalComponent} from "@components/modal/qr-code-modal/qr-code-modal.component";
-import { FiltersComponent } from '@components/modal/filters-modal/filters.component';
+import { DialogRef } from '@angular/cdk-experimental/dialog';
+import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-eco-market',
-  templateUrl: './eco-market.component.html',
-  styleUrls: ['./eco-market.component.sass'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'app-filters',
+  templateUrl: './filters.component.html',
+  styleUrls: ['./filters.component.sass'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
+export class FiltersComponent implements OnInit {
 
-export class EcoMarketComponent implements OnInit {
-
-  @Input() data_cards: Array<any>;
   @Input() gender: Array<any>;
   @Input() type: Array<any>;
   @Input() brand: Array<any>;
   @Input() allTp: Array<any>;
   @Input() allBr: Array<any>;
 
-  constructor(private dialog: DialogService) {
-    this.data_cards = DataItems;
+
+  constructor(
+    private dialogRef: DialogRef<FiltersComponent>
+  ) { 
     this.gender = [
       {title: "Мужской", checked: false},
       {title: "Женский", checked: false},
@@ -47,12 +44,9 @@ export class EcoMarketComponent implements OnInit {
     ]
   }
 
-  ngOnInit(): void {}
-
-  openActionDialog() {
-    this.dialog.openDialog(QRCodeModalComponent, {});
+  ngOnInit(): void {
   }
-  openBottomSheet(){
-    this.dialog.openBottomSheet(FiltersComponent, {}); 
+  close(resolve: boolean): void {
+    this.dialogRef.close(resolve);
   }
 }

@@ -1,0 +1,95 @@
+@import "mixins.sass"
+
+.filters-menu
+  display: none
+  height: 85vh
+  width: 100vw
+  background: white
+  border-radius: 45px 45px 0px 0px
+  box-shadow: 0px 5px 44px 12px $c-shadow
+
+  &__button
+      width: 100%
+      justify-content: center
+      text-align: center
+
+      button
+        text-align: center
+        justify-content: center
+        cursor: pointer
+        width: 35px
+        border: none
+        height: 3px
+
+  &:after
+    display: block
+    position: absolute
+    top: 10px
+    left: calc(50% - 16px)
+    background: $c-glight
+    border-radius: 4px
+    width: 32px
+    height: 3px
+  
+  @media (max-width: 959px) 
+    display: block
+
+  &__filters
+      padding: 1em 2em
+      overflow: auto
+      height: 400px
+      h4
+          padding: 0 0 1.5em 0
+
+      &__block
+          padding: 0 0 0.6em 0
+
+  &__content
+    display: flex
+    text-align: center
+    padding: 1em
+    justify-content: center
+
+    button
+        margin: 0 0.5em
+        background: $c-glight
+        color: black
+        padding: 1em 1.7em
+        border: none
+        border-radius: 61px
+        cursor: pointer
+
+        &:hover
+            background: black
+            color: white
+            
+  &__buttons
+    position: fixed
+    background: white
+    bottom: 0
+    left: 0
+    width: 100%
+    padding: 0.5em 1em
+
+    button
+        width: 100%
+        border: none
+        border-radius: 10px
+        padding: 1em
+        cursor: pointer
+        margin: 0.5em 0
+        font-size: 16px
+
+        &:hover
+          box-shadow: 0px 5px 12px 6px $c-shadow-light
+          transform: translateY(-2px)
+
+    .apply
+        background:$c-primary
+        color: white
+
+    .reset
+        background: $c-glight
+        color: black
+  
+

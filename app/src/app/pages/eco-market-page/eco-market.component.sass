@@ -3,7 +3,11 @@
 .eco_market
   z-index: 10
   @include main_wrap
-
+  
+  &__filters_btn
+    display: none
+      
+  
   &__content
     padding: 1em 
     display: flex
@@ -77,6 +81,7 @@
         h4
           padding: 0
           margin-bottom: 1em
+
 .border
   border: 1px solid $c-light
   border-radius: 20px
@@ -86,16 +91,38 @@
 @media screen and (max-width: 795px)
   .eco_market
     @include zeroing-indents
-  .eco_market__mainContent__search
-    display: none
-  .eco_market__mainContent
-    display: block
-    width: 100%
-  .eco_market__mainContent__blocks
-    width: 100%
-    display: block
-  .eco_market__mainContent__blocks__card
-    width: 100%
-    padding: 1em
-  .eco_market__content
-    display: none
+
+    &__filters_btn
+      display: contents
+      button
+        margin: 0.5em 1em 
+        width: 95%
+        cursor: pointer
+        padding: 1em
+        font-size: 16px
+        background: $c-glight
+        color: black
+        border: none
+        font-weight: 500
+        border-radius: 8px
+
+    &__content
+      ul
+        display: none
+
+    &__mainContent
+      display: block
+      width: 100%
+
+      &__search
+        display: none
+  
+      &__blocks
+        width: 100%
+        display: block
+
+        &__card
+          width: 100%
+          padding: 1em
+
+    

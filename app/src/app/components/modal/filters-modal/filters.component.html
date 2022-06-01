@@ -1,0 +1,36 @@
+<div class="filters-menu">
+    <div class="filters-menu__button">
+        <button></button>
+    </div>
+    <div class="filters-menu__content">
+        <button>По популярности</button>
+        <button>По цене</button>
+        <button>По новизне</button>
+    </div>
+    <div class="filters-menu__filters">
+        <div class='filters-menu__filters__block'>
+            <h4>Пол</h4>
+            <div *ngFor="let i of gender">
+                <app-checkbox label="{{i.title}}" id="{{i.title}}"></app-checkbox>
+            </div>
+        </div>
+        <div class='filters-menu__filters__block'>
+            <h4>Тип товара</h4>
+            <app-checkbox label="{{allTp[0].title}}" id="{{allTp[0].title}}"></app-checkbox>
+            <div *ngFor="let k of type" class="card_product">
+                <app-checkbox label="{{k.title}}" id="{{k.title}}"></app-checkbox>
+            </div>
+        </div>
+        <div class='filters-menu__filters__block'>
+            <h4>Брэнд</h4>
+            <app-checkbox label="{{allBr[0].title}}" id="{{allBr[0].title}}"></app-checkbox>
+            <div *ngFor="let j of brand" class="card_product">
+                <app-checkbox label="{{j.title}}" id="{{j.title}}"></app-checkbox>
+            </div>
+        </div>
+    </div>
+    <div class="filters-menu__buttons">
+        <button class="apply">Применить</button>
+        <button class="reset">Сбросить фильтры</button>
+    </div>
+</div>

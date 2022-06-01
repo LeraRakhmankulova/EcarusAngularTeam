@@ -13,6 +13,10 @@
         </li>
       </ul>
   </div>
+  <div class="eco_market__filters_btn">
+    <button (click)="openBottomSheet()">Фильтры</button>
+  </div>
+
   <div class="eco_market__mainContent">
     <div class="eco_market__mainContent__search">
       <div class="border">
@@ -37,7 +41,11 @@
           </div>
         </div>
       </div>
-      <app-modal-button text="Сбросить фильтры" color="black" background="rgba(62, 80, 114, 0.08)" width='100%'>
+      <app-modal-button 
+            text="Сбросить фильтры" 
+            color="black" 
+            background="rgba(62, 80, 114, 0.08)" 
+            width='100%'>
       </app-modal-button>
     </div>
 
