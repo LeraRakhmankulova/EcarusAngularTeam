@@ -12,10 +12,10 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
     trigger('openBottomSheet', [
       transition(':enter', [
         style({transform: 'translateY(100%)'}),
-        animate('300ms ease-in', style({transform: 'translateY(0%)'}))
+        animate('400ms ease-in', style({transform: 'translateY(0%)'}))
       ]),
       transition(':leave', [
-        animate('300ms ease-in', style({transform: 'translateX(100%)'}))
+        animate('400ms ease-in', style({transform: 'translateX(100%)'}))
       ])
     ])
   ]
