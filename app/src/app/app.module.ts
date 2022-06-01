@@ -47,6 +47,7 @@ import { FullMapCardComponent } from '@components/cards/full-map-card/full-map-c
 import { FiltersComponent } from '@components/modal/filters-modal/filters.component';
 import { BottomSheetComponent } from '@components/modal/bottom-sheet/bottom-sheet.component';
 import { MaterialsComponent } from '@components/modal/materials-modal/materials.component';
+import { RecyclingComponent } from '@components/modal/recycling-modal/recycling.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { MaterialsComponent } from '@components/modal/materials-modal/materials.
     FiltersComponent,
     BottomSheetComponent,
     MaterialsComponent,
+    RecyclingComponent,
   ],
   imports: [
     BrowserModule,

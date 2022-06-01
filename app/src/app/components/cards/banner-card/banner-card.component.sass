@@ -2,7 +2,7 @@
 
 .card_info
     width: 100%
-    padding: 0 0.5em 
+    padding: 0.3em 0.5em 
     border-radius: 18px
 
     &__banner
@@ -16,19 +16,18 @@
         &__text
             height: 100%
             width: 100%
-            padding: 0 2em
             justify-content: center
-            margin: auto
+            margin: auto 0
+            padding: 0 2em
             @include second-title
 
             p
                 padding: 0.7em 0
                 font-weight: 400
-                font-size: calc(7px + 22 * (100vw / 4000)) 
+                font-size: calc(14px + 4 * (100vw / 2000)) 
 
             &__button
                 margin-top: 12%
-
 
                 button
                     justify-content: center
@@ -53,6 +52,7 @@
                 padding: 0.1em 0.2em
                 height: 100%
                 img
+                    border-radius: 18px
                     width: 90%
                     height: auto
 
