@@ -53,7 +53,7 @@
             <img src="/assets/images/point.svg" alt="point"/>
             <p>Казань</p>
           </li>
-          <li>
+          <li class="header__content__userAuth__score">
             <div class="icon"></div>
             <p>1000</p>
           </li>
@@ -65,7 +65,7 @@
           </li>
           <li class="header__content__userAuth__logout">
             <div (click)="authService.deleteInStorage();closeProfile()" class="login">
-              <img src="/assets/images/in.svg" alt="logout"/>
+              <div class="logout_icon"></div>
               <p>Выйти</p>
             </div>
           </li>
