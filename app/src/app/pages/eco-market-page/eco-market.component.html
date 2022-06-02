@@ -1,17 +1,17 @@
 <div class="eco_market">
   <div class="eco_market__content">
     <h1>ЭкоМаркет</h1>
-      <ul>
-        <li>
-          <a>По популярности</a>
-        </li>
-        <li>
-          <a>По цене</a>
-        </li>
-        <li>
-          <a>По новизне</a>
-        </li>
-      </ul>
+    <ul>
+      <li>
+        <a>По популярности</a>
+      </li>
+      <li>
+        <a>По цене</a>
+      </li>
+      <li>
+        <a>По новизне</a>
+      </li>
+    </ul>
   </div>
   <div class="eco_market__filters_btn">
     <button (click)="openBottomSheet()">Фильтры</button>
@@ -41,11 +41,7 @@
           </div>
         </div>
       </div>
-      <app-modal-button 
-            text="Сбросить фильтры" 
-            color="black" 
-            background="rgba(62, 80, 114, 0.08)" 
-            width='100%'>
+      <app-modal-button text="Сбросить фильтры" color="black" background="rgba(62, 80, 114, 0.08)" width='100%'>
       </app-modal-button>
     </div>
 
@@ -55,8 +51,23 @@
       </div>
 
       <div class="eco_market__mainContent__blocks__card" *ngFor="let i of data_cards">
-        <app-product-card price="{{i.price}}" brand="{{i.brand}}" name="{{i.nameDesc}}" category="{{i.category}}"
-          picture="{{i.picture}}"></app-product-card>
+        <app-product-card 
+          price="{{i.price}}" 
+          brand="{{i.brand}}" 
+          name="{{i.nameDesc}}" 
+          category="{{i.category}}"
+          picture="{{i.picture}}">
+        </app-product-card>
+        <!-- <ngx-skeleton-loader 
+          count="2" 
+          appearance="line" 
+          animation="progress" 
+          [theme]="{
+                  'background-color': '#FFBF00',
+                  height: '30px',
+                  'border-radius': 0
+                }">
+        </ngx-skeleton-loader> -->
       </div>
     </div>
   </div>
