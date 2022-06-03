@@ -47,7 +47,8 @@ import { BannerCardComponent } from '@components/cards/main-page/banner-card/ban
 import { SwiperCardComponent } from '@components/cards/main-page/swiper-card/swiper-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from '@components/map/map.component';
-import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card/PromoCard.component';
+import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card/promoCard.component';
+import { SkeletonLoaderModule } from '@components/skeleton-loader/skeleton-loader.module';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card
       positionClass: 'toast-bottom-center'
     }),
     BrowserAnimationsModule,
-    ToastContainerModule
+    ToastContainerModule,
+    SkeletonLoaderModule
   ],
   providers: [
     {
