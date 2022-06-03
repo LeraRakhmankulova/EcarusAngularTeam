@@ -50,6 +50,7 @@ import { MapComponent } from '@components/map/map.component';
 import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card/promoCard.component';
 import { SkeletonLoaderModule } from '@components/skeletons/skeleton-loader/skeleton-loader.module';
 import { ProductSkeletonComponent } from './components/skeletons/product-skeleton/product-skeleton.component';
+import { MapCardSkeletonComponent } from './components/skeletons/map-card-skeleton/map-card-skeleton.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { ProductSkeletonComponent } from './components/skeletons/product-skeleto
     RecyclingComponent,
     SideBarComponent,
     ProductSkeletonComponent,
+    MapCardSkeletonComponent,
   ],
   imports: [
     BrowserModule,

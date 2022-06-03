@@ -22,7 +22,7 @@ export class EcoMarketComponent implements OnInit {
 
   loadingContent: boolean = true;
 
-  constructor(private dialog: DialogService, private cdr: ChangeDetectorRef,) {
+  constructor(private dialog: DialogService, private cdr: ChangeDetectorRef) {
     this.data_cards = DataItems;
     this.gender = [
       {title: "Мужской", checked: false},
