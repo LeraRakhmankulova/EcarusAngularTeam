@@ -3,10 +3,9 @@
         <button (click)="close(true)"></button>
     </div>
     <div class="recycling-menu__cards">
-        <map-card></map-card>
-        <map-card></map-card>
-        <map-card></map-card>
-        <map-card></map-card>
+        <div *ngFor='let item of points$ | async'>
+            <map-card [collPoint]='item'></map-card>
+        </div>
     </div>
     <div class="recycling-menu__buttons">
         <button (click)="close(true)">Закрыть</button>

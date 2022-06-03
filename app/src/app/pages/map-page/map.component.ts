@@ -14,8 +14,7 @@ export class MapPageComponent {
   points$ = this.pointsService.points$
   selected = 0;
 
-  constructor(private dialog: DialogService,
-              private pointsService: PointsService) {
+  constructor(private dialog: DialogService, private pointsService: PointsService) {
   }
 
   onChange(count: number) {

@@ -1,5 +1,6 @@
 <div class='full_card' *ngIf='point'>
     <a class='full_card__back' routerLink='/collection_points'>
+        <img src="/assets/images/back.svg" alt='back_arrow'/>
         <p>Вернуться назад</p>
     </a>
     <div class='full_card__info'>
@@ -9,9 +10,9 @@
         <div class='full_card__info__content'>
             <div>
                 <h3>​{{point.address}}</h3>
-                <p>+7 (917) 888 88 88</p>
+                <p class="full_card__info__content__phone">+7 (917) 888 88 88</p>
             </div>
-            <div>
+            <div class="full_card__info__content__timeTable">
                 <p>Пн - Пт 08:00 - 20:00</p>
                 <p>Сб - Вс 10:00 - 18:00</p>
             </div>
