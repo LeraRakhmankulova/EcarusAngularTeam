@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {MenuComponent} from '@components/modal/menu-modal/menu.component';
+import {MenuComponent} from '@components/modal/modal-content/menu-modal/menu.component';
 import {DialogService} from "@services/dialog.service";
-import {SignModalComponent} from "../modal/sign-modal/sign-modal.component";
+import {SignModalComponent} from "../modal/modal-content/sign-modal/sign-modal.component";
 import {AuthService} from '@services/auth.service';
 import {Router} from '@angular/router';
 

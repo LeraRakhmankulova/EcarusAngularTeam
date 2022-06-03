@@ -1,13 +1,13 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {DataItems} from '../../mocks/productMock'
 import {DialogService} from "@services/dialog.service";
-import {QRCodeModalComponent} from "@components/modal/qr-code-modal/qr-code-modal.component";
-import { FiltersComponent } from '@components/modal/filters-modal/filters.component';
+import {QRCodeModalComponent} from "@components/modal/modal-content/qr-code-modal/qr-code-modal.component";
+import { FiltersComponent } from '@components/modal/modal-content/filters-modal/filters.component';
 
 @Component({
   selector: 'app-eco-market',
   templateUrl: './eco-market.component.html',
-  styleUrls: ['./eco-market.component.sass'],
+  styleUrls: ['./eco-market.component.sass', './custom_scroll.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
@@ -35,6 +35,9 @@ export class EcoMarketComponent implements OnInit {
       {title: "H&M", checked: false},
       {title: "P&B", checked: false},
       {title: "Adidas", checked: false},
+      {title: "Nike", checked: false},
+      {title: "Reebok", checked: false},
+      {title: "Puma", checked: false},
       {title: "Nike", checked: false},
       {title: "Reebok", checked: false},
       {title: "Puma", checked: false},

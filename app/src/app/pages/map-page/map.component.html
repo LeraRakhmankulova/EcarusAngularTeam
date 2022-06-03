@@ -25,10 +25,12 @@
             </div>
         </div>
         <div class="map_content__upperBlock__cards">
-            <map-card></map-card>
-            <map-card></map-card>
-            <map-card></map-card>
-            <map-card></map-card>
+            <div *ngFor='let item of points$ | async'>
+				<map-card [collPoint]='item'></map-card>
+			</div>
+        </div>
+        <div class="map_content__upperBlock__cards">
+            <router-outlet></router-outlet>
         </div>
     </div>
     <div class="map_content__upperBlock__button">

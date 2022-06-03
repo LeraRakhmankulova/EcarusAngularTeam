@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'map-card',
@@ -6,4 +6,5 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./map-card.component.sass']
 })
 export class MapCardComponent {
+  @Input() collPoint: any = null;
 }

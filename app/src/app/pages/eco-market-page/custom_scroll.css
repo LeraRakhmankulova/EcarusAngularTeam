@@ -1,0 +1,10 @@
+.border{
+    max-height: 450px;
+    overflow-y: scroll;
+    grid-area: search_block;
+    padding: 1em;
+}
+
+.border::-webkit-scrollbar {width: 5px; padding: 2em;}
+.border::-webkit-scrollbar-thumb {border-radius: 10px;background: #f0f2f5;}
+.border:hover::-webkit-scrollbar-thumb {background: #7e7f81;}

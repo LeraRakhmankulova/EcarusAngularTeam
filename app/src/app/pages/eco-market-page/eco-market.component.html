@@ -20,6 +20,7 @@
   <div class="eco_market__mainContent">
     <div class="eco_market__mainContent__search">
       <div class="border">
+        
         <div class="eco_market__mainContent__search__type">
           <h4>Пол</h4>
           <div *ngFor="let i of gender">
@@ -41,7 +42,11 @@
           </div>
         </div>
       </div>
-      <app-modal-button text="Сбросить фильтры" color="black" background="rgba(62, 80, 114, 0.08)" width='100%'>
+      <app-modal-button 
+          text="Сбросить фильтры" 
+          color="black" 
+          background="rgba(62, 80, 114, 0.08)" 
+          width='100%'>
       </app-modal-button>
     </div>
 
@@ -58,16 +63,6 @@
           category="{{i.category}}"
           picture="{{i.picture}}">
         </app-product-card>
-        <!-- <ngx-skeleton-loader 
-          count="2" 
-          appearance="line" 
-          animation="progress" 
-          [theme]="{
-                  'background-color': '#FFBF00',
-                  height: '30px',
-                  'border-radius': 0
-                }">
-        </ngx-skeleton-loader> -->
       </div>
     </div>
   </div>

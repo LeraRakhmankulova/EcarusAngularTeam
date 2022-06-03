@@ -1,9 +1,9 @@
 import { Injectable, TemplateRef } from '@angular/core';
 import { Dialog, DialogConfig, DialogRef } from '@angular/cdk-experimental/dialog';
-import { ModalContainerComponent } from '@components/modal/modal-container/modal-container.component';
+import { ModalContainerComponent } from '@components/modal/modal-containers/modal-container/modal-container.component';
 import { ComponentType } from '@angular/cdk/overlay';
-import { BottomSheetComponent } from '@components/modal/bottom-sheet/bottom-sheet.component';
-import { SideBarComponent } from '@components/modal/side-bar-modal/side-bar.component';
+import { BottomSheetComponent } from '@components/modal/modal-containers/bottom-sheet/bottom-sheet.component';
+import { SideBarComponent } from '@components/modal/modal-containers/side-bar-modal/side-bar.component';
 
 @Injectable({
   providedIn: 'root'

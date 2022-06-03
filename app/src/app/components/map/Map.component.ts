@@ -6,8 +6,8 @@ import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-map',
-  templateUrl: './Map.component.html',
-  styleUrls: ['./Map.component.sass'],
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.sass'],
 })
 export class MapComponent implements AfterViewInit {
   map: any;

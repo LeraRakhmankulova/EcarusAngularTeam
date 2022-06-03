@@ -1,14 +1,14 @@
-<div class='full_card'>
-    <button class='full_card__back'>
+<div class='full_card' *ngIf='point'>
+    <a class='full_card__back' routerLink='/collection_points'>
         <p>Вернуться назад</p>
-    </button>
+    </a>
     <div class='full_card__info'>
         <div class='full_card__info__image'>
-            <img src='' />
+            <img src='/assets/images/bins.png' />
         </div>
         <div class='full_card__info__content'>
             <div>
-                <h3>​Казань, Кремлёвская, 88</h3>
+                <h3>​{{point.address}}</h3>
                 <p>+7 (917) 888 88 88</p>
             </div>
             <div>
