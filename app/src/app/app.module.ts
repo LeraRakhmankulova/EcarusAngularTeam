@@ -18,7 +18,6 @@ import { HeaderComponent } from '@components/header/header.component';
 import { FooterComponent } from '@components/footer/footer.component.';
 import { MainComponent } from '@pages/main-page/main.component';
 import { SwiperBannerComponent } from '@components/swiper-banner/swiper-banner.component';
-import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card/PromoCard.component';
 import { ProductCardComponent } from '@components/cards/eco-market-page/product-card/product-card.component';
 import { ModalButtonComponent } from '@components/ui/modal-button/button.component';
 import { CheckboxComponent } from '@components/ui/checkbox/checkbox.component';
@@ -48,6 +47,7 @@ import { BannerCardComponent } from '@components/cards/main-page/banner-card/ban
 import { SwiperCardComponent } from '@components/cards/main-page/swiper-card/swiper-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from '@components/map/map.component';
+import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card/PromoCard.component';
 
 @NgModule({
   declarations: [

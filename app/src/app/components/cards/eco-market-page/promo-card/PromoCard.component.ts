@@ -2,8 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-promo-card',
-  templateUrl: './PromoCard.component.html',
-  styleUrls: ['./PromoCard.component.sass']
+  templateUrl: './promoCard.component.html',
+  styleUrls: ['./promoCard.component.sass']
 })
 export class PromoCardComponent {
 
