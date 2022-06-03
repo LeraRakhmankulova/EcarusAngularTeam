@@ -68,5 +68,12 @@ export const DataItems = [
         nameDesc: 'Nike Air Force 1 Low',
         category: 'Мужская обувь',
         picture: '../../assets/images/nike5.png'
-    }
+    },
+    {
+        price: '1000',
+        brand: 'NIKE',
+        nameDesc: 'Nike Air Max 2021',
+        category: 'Мужская обувь',
+        picture: '../../assets/images/nike1.png',
+    },
 ]
