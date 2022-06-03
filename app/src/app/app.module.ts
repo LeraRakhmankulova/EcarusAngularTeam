@@ -48,7 +48,8 @@ import { SwiperCardComponent } from '@components/cards/main-page/swiper-card/swi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from '@components/map/map.component';
 import { PromoCardComponent } from '@components/cards/eco-market-page/promo-card/promoCard.component';
-import { SkeletonLoaderModule } from '@components/skeleton-loader/skeleton-loader.module';
+import { SkeletonLoaderModule } from '@components/skeletons/skeleton-loader/skeleton-loader.module';
+import { ProductSkeletonComponent } from './components/skeletons/product-skeleton/product-skeleton.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { SkeletonLoaderModule } from '@components/skeleton-loader/skeleton-loade
     MaterialsComponent,
     RecyclingComponent,
     SideBarComponent,
+    ProductSkeletonComponent,
   ],
   imports: [
     BrowserModule,

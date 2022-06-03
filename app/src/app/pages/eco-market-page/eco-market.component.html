@@ -55,7 +55,7 @@
       <div class="eco_market__mainContent__blocks__card" *ngFor="let i of data_cards">
 
         <ng-container *ngIf="loadingContent">
-          <app-skeleton-loader Width="250" Height="250"></app-skeleton-loader>
+          <app-product-skeleton></app-product-skeleton>
         </ng-container>
         
         <div *ngIf="!loadingContent">

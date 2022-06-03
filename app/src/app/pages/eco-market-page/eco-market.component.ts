@@ -56,7 +56,7 @@ export class EcoMarketComponent implements OnInit {
     setTimeout(() => {
       this.loadingContent = false;
       this.cdr.markForCheck();
-    }, 5000);
+    }, 3500);
   }
 
   openActionDialog() {
